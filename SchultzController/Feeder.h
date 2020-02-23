@@ -22,7 +22,7 @@ class FeederClass {
       /*
        *  Feeder number to TX port mapping (uses D port numbers)
        */
-      const uint8_t TXportPin[20] = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 };
+      const uint8_t TXportPin[20] = { 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };
 
       bool inverse_logic = true;  // inverted logic for serial output
       
@@ -59,6 +59,7 @@ class FeederClass {
 
     bool sendPrePick();
     bool sendAdvance(bool overrideError);
+    bool setPitch(uint8_t pitch);
     bool clearFeedCount();
     bool getFeederStatus();
     bool readEEPROM(uint8_t *buf);

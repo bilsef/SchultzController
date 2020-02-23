@@ -288,6 +288,26 @@ bool FeederClass::sendAdvance(bool overrideError) {
   return true;
 }
 
+bool FeederClass::setPitch(uint8_t pitch) {
+  uint8_t dataBuf[2];
+
+  #ifdef DEBUG
+    Serial.print(F("Set pitch to "));
+    Serial.println(pitch);
+  #endif
+  
+  dataBuf[0] = pitch;
+  dataBuf[1] = 0;
+  
+  if (!FeederClass::sendCommand(CMD_SET_PITCH, 1 , dataBuf)) {
+    #ifdef DEBUG
+      Serial.println(F("No ACK from feeder"));
+    #endif
+    return false;
+  }
+  return true;
+}
+
 bool FeederClass::feederIsOk() {
 	if(this->feederStatus == STATUS_OK) {
 		return true;

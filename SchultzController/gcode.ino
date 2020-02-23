@@ -55,6 +55,22 @@ bool validFeederNo(int8_t signedFeederNo, uint8_t feederNoMandatory = 0) {
 	}
 }
 
+bool validPitch(int8_t pitch, uint8_t pitchMandatory = 0) {
+  if(pitch == -1 && pitchMandatory >= 1) {
+    //no number given (-1) but it is mandatory.
+    return false;
+    } else {
+    //state now: number is given, check for valid range
+    if(pitch<0 || pitch>1) {
+      //error, number not in a valid range
+      return false;
+      } else {
+      //valid number
+      return true;
+    }
+  }
+}
+
 /**
 * Read the input buffer and find any recognized commands.  One G or M command per line.
 */
@@ -147,7 +163,7 @@ void processCommand() {
 
       uint8_t inBuf[24];
 			if(feeders[signedFeederNo].readEEPROM(inBuf)) {
-        uint16_t count = (inBuf[3] << 8) + inBuf[2];
+        uint32_t count = (inBuf[5] << 16) + (inBuf[3] << 8) + inBuf[2];
         char countStr[22];
         sprintf(countStr, "Feed count: %u", count);
   			sendAnswer(0,F(countStr));
@@ -175,6 +191,98 @@ void processCommand() {
 
 			break;
 		}
+
+    case MCODE_GET_ERR42_COUNT: {
+      int8_t signedFeederNo = (int)parseParameter('N',-1);
+
+      //check for presence of FeederNo
+      if(!validFeederNo(signedFeederNo,1)) {
+        sendAnswer(1,F("feederNo missing or invalid"));
+        break;
+      }
+
+      uint8_t inBuf[24];
+      if(feeders[signedFeederNo].readEEPROM(inBuf)) {
+        uint16_t count = ((inBuf[12] & 0x0f) << 8) + inBuf[8];
+        char countStr[22];
+        sprintf(countStr, "Error 42 count: %u", count);
+        sendAnswer(0,F(countStr));
+      } else {
+        sendAnswer(1,F(" no response from feeder"));
+      }
+
+      break;
+    }
+
+    case MCODE_GET_ERR43_COUNT: {
+      int8_t signedFeederNo = (int)parseParameter('N',-1);
+
+      //check for presence of FeederNo
+      if(!validFeederNo(signedFeederNo,1)) {
+        sendAnswer(1,F("feederNo missing or invalid"));
+        break;
+      }
+
+      uint8_t inBuf[24];
+      if(feeders[signedFeederNo].readEEPROM(inBuf)) {
+        uint16_t count = ((inBuf[12] & 0xf0) << 4) + inBuf[9];
+        char countStr[22];
+        sprintf(countStr, "Error 43 count: %u", count);
+        sendAnswer(0,F(countStr));
+      } else {
+        sendAnswer(1,F(" no response from feeder"));
+      }
+
+      break;
+    }
+
+    case MCODE_GET_ERR44_COUNT: {
+      int8_t signedFeederNo = (int)parseParameter('N',-1);
+
+      //check for presence of FeederNo
+      if(!validFeederNo(signedFeederNo,1)) {
+        sendAnswer(1,F("feederNo missing or invalid"));
+        break;
+      }
+
+      uint8_t inBuf[24];
+      if(feeders[signedFeederNo].readEEPROM(inBuf)) {
+        uint16_t count = ((inBuf[13] & 0x0f) << 8) + inBuf[10];
+        char countStr[22];
+        sprintf(countStr, "Error 44 count: %u", count);
+        sendAnswer(0,F(countStr));
+      } else {
+        sendAnswer(1,F(" no response from feeder"));
+      }
+
+      break;
+    }
+
+    case MCODE_GET_RESET_COUNT: {
+      int8_t signedFeederNo = (int)parseParameter('N',-1);
+
+      //check for presence of FeederNo
+      if(!validFeederNo(signedFeederNo,1)) {
+        sendAnswer(1,F("feederNo missing or invalid"));
+        break;
+      }
+
+      if(signedFeederNo%2 != 0) { // Reset count is only in the lane 1 field, so need to adjust if it is lane 2
+        signedFeederNo--;
+      }
+
+      uint8_t inBuf[24];
+      if(feeders[signedFeederNo].readEEPROM(inBuf)) {
+        uint16_t count = ((inBuf[13] & 0xf0) << 4) + inBuf[11];
+        char countStr[22];
+        sprintf(countStr, "Reset count: %u", count);
+        sendAnswer(0,F(countStr));
+      } else {
+        sendAnswer(1,F(" no response from feeder"));
+      }
+
+      break;
+    }
 
 		case MCODE_READ_EEPROM: {
 			int8_t signedFeederNo = (int)parseParameter('N',-1);
@@ -215,7 +323,7 @@ void processCommand() {
       if(feeders[signedFeederNo].readEEPROM(inBuf)) {
         uint16_t id = (inBuf[1] << 8) + inBuf[0];
         char idStr[22];
-        sprintf(idStr, "ID: %u%s", id, (left ? "-L" : "-R"));
+        sprintf(idStr, "ID: %u%s", id, (left ? "L" : "R"));
         sendAnswer(0,F(idStr));
       } else {
         sendAnswer(1,F(" no response from feeder"));
@@ -243,6 +351,32 @@ void processCommand() {
 			}
 			break;
 		}
+
+    case MCODE_SET_PITCH: {
+      int8_t signedFeederNo = (int)parseParameter('N',-1);
+      int8_t pitch = (int)parseParameter('P',-1);
+
+      //check for presence of FeederNo
+      if(!validFeederNo(signedFeederNo,1)) {
+        sendAnswer(1,F("feederNo missing or invalid"));
+        break;
+      }
+
+      //check for presence of a mandatory Pitch
+      if(!validPitch(pitch,1)) {
+        sendAnswer(1,F("pitch must be 0 or 1 invalid"));
+        break;
+      }
+
+      //send feed command
+      if (!feeders[signedFeederNo].setPitch(pitch)) {
+        sendAnswer(1,F("Unable to set pitch"));
+      } else {
+        sendAnswer(0,F("Pitch set"));
+      }
+
+      break;
+    }
 
 		case MCODE_GET_FIRMWARE_INFO: {
 			int8_t signedFeederNo = (int)parseParameter('N',-1);

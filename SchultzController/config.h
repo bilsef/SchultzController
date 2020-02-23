@@ -6,7 +6,7 @@
 
 // prints some extra information via serial1
 // uncomment to disable in production
-#define DEBUG
+//#define DEBUG
 
 // simulates connected feederS
 //#define SIMULATE
@@ -36,6 +36,7 @@
 #define CMD_EEPROM_READ 0x17
 #define CMD_SELF_TEST 0x18
 #define CMD_EEPROM_WRITE 0x19
+#define CMD_SET_PITCH 0x1c
 
 /* -----------------------------------------------------------------
 *  FEEDER STATUS
@@ -62,12 +63,17 @@
 #define MCODE_FEEDER_STATUS 602
 #define MCODE_GET_FEED_COUNT 603
 #define MCODE_CLEAR_FEED_COUNT 623
-#define MCODE_GET_PITCH 604
-#define MCODE_READ_EEPROM 605
-#define MCODE_GET_FEEDER_ID 606
+#define MCODE_GET_ERR42_COUNT 604
+#define MCODE_GET_ERR43_COUNT 605
+#define MCODE_GET_ERR44_COUNT 606
+#define MCODE_GET_RESET_COUNT 607
+#define MCODE_GET_PITCH 608
+#define MCODE_SET_PITCH 627
+#define MCODE_READ_EEPROM 630
+#define MCODE_GET_FEEDER_ID 610
 #define MCODE_GET_FIRMWARE_INFO 615
-#define MCODE_START_SELF_TEST 630
-#define MCODE_STOP_SELF_TEST 631
+#define MCODE_START_SELF_TEST 650
+#define MCODE_STOP_SELF_TEST 651
 
 
 //DEFINE config_h-ENDIF!!!
