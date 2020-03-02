@@ -22,7 +22,14 @@ class FeederClass {
       /*
        *  Feeder number to TX port mapping (uses D port numbers)
        */
+#if defined (BOARD96PIN)
       const uint8_t TXportPin[20] = { 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };
+#elif defined (BOARD4PIN)
+      const uint8_t TXportPin[20] = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12 }; // Matches ref des order of board
+      //const uint8_t TXportPin[20] = { 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 }; // J20 is port 0, then goes counter-clockwise
+#else
+      const uint8_t TXportPin[20] = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 14, 15, 16, 17, 18, 19, 20, 21 };
+#endif
 
       bool inverse_logic = true;  // inverted logic for serial output
       

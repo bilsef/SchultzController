@@ -305,6 +305,51 @@ bool FeederClass::setPitch(uint8_t pitch) {
     #endif
     return false;
   }
+
+  // update pitch field in eeprom
+  //   Read current EEPROM data
+    #ifdef DEBUG
+      Serial.println("send read EEPROM command");
+    #endif
+
+  if (!FeederClass::sendCommand(CMD_EEPROM_READ, dataBuf)) {
+    #ifdef DEBUG
+      Serial.println(F("No ACK from feeder"));
+    #endif
+    return false;
+  }
+
+  #ifdef SIMULATE
+    for (uint8_t i = 0; i < 16; i++) {
+      dataBuf[i+1] = this->eeprom[i];
+    }
+  #endif
+
+  for (uint8_t i = 1; i < 17; i++) {
+    dataBuf[i] = dataBuf[i+3];
+  }
+
+  dataBuf[0] = 0;
+
+  dataBuf[5] = pitch; // pitch byte
+
+  #ifdef DEBUG
+    Serial.println("send write EEPROM command");
+  #endif
+
+  if (!FeederClass::sendCommand(CMD_EEPROM_WRITE, 17, dataBuf)) {
+    #ifdef DEBUG
+      Serial.println(F("No ACK from feeder"));
+    #endif
+    return false;
+  }
+  
+  #ifdef SIMULATE
+    for (uint8_t i = 0; i < 16; i++) {
+      this->eeprom[i] == dataBuf[i+1];
+    }
+  #endif
+  
   return true;
 }
 
@@ -409,7 +454,8 @@ bool FeederClass::clearFeedCount() {
   dataBuf[8] = 1;
 
   dataBuf[3] = 0; // count low byte
-  dataBuf[4] = 0; // count high byte
+  dataBuf[4] = 0; // count mid byte
+  dataBuf[6] = 0; // count high byte
   #ifdef DEBUG
     Serial.println("send write EEPROM command");
   #endif

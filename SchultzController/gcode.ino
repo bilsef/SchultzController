@@ -352,9 +352,9 @@ void processCommand() {
 			break;
 		}
 
-    case MCODE_SET_PITCH: {
+    case MCODE_TOGGLE_PITCH: {
       int8_t signedFeederNo = (int)parseParameter('N',-1);
-      int8_t pitch = (int)parseParameter('P',-1);
+      int8_t pitch;
 
       //check for presence of FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
@@ -362,19 +362,23 @@ void processCommand() {
         break;
       }
 
-      //check for presence of a mandatory Pitch
-      if(!validPitch(pitch,1)) {
-        sendAnswer(1,F("pitch must be 0 or 1 invalid"));
-        break;
-      }
+      uint8_t inBuf[24];
+      if(feeders[signedFeederNo].readEEPROM(inBuf)) {
+        if (inBuf[4] == 0) {
+          pitch = 1;
+        } else {
+          pitch = 0;
+        }
+        //send set pitch command
+        if (!feeders[signedFeederNo].setPitch(pitch)) {
+          sendAnswer(1,F("Unable to set pitch"));
+        } else {
+          sendAnswer(0,F("Pitch set"));
+        }
 
-      //send feed command
-      if (!feeders[signedFeederNo].setPitch(pitch)) {
-        sendAnswer(1,F("Unable to set pitch"));
       } else {
-        sendAnswer(0,F("Pitch set"));
+        sendAnswer(1,F(" no response from feeder"));
       }
-
       break;
     }
 

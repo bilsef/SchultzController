@@ -2,7 +2,8 @@
 #define _CONFIG_h
 #include "arduino.h"
 
-
+#define BOARD96PIN
+//#define BOARD4PIN
 
 // prints some extra information via serial1
 // uncomment to disable in production
@@ -68,7 +69,7 @@
 #define MCODE_GET_ERR44_COUNT 606
 #define MCODE_GET_RESET_COUNT 607
 #define MCODE_GET_PITCH 608
-#define MCODE_SET_PITCH 627
+#define MCODE_TOGGLE_PITCH 628
 #define MCODE_READ_EEPROM 630
 #define MCODE_GET_FEEDER_ID 610
 #define MCODE_GET_FIRMWARE_INFO 615
