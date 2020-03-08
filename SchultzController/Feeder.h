@@ -35,6 +35,7 @@ class FeederClass {
       
       bool sendCommand(uint8_t command);  // sends a simple command
       bool sendCommand(uint8_t command, uint8_t *dataBuf);  // sends a simple command, gets a response in dataBuf
+      bool sendCommand(uint8_t command, uint8_t *dataBuf, uint8_t offset);  // sends a simple command with extra byte (offset) after lane, gets a response in dataBuf
       bool sendCommand(uint8_t command, uint8_t len, uint8_t *dataBuf);  // sends a simple command followed by data in dataBuf
       bool receiveACK();
       bool receiveMessage(uint8_t *dataBuf);
@@ -73,6 +74,7 @@ class FeederClass {
     bool readInfo(uint8_t *buf);
     bool startSelfTest();
     bool stopSelfTest();
+    bool setID(int32_t feederID);
     
     String reportStatus();
     bool feederIsOk();

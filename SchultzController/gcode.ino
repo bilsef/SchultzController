@@ -71,6 +71,22 @@ bool validPitch(int8_t pitch, uint8_t pitchMandatory = 0) {
   }
 }
 
+bool validFeederID(int32_t signedFeederID, uint8_t feederIDMandatory = 0) {
+  if(signedFeederID == -1 && feederIDMandatory >= 1) {
+    //no number given (-1) but it is mandatory.
+    return false;
+    } else {
+    //state now: number is given, check for valid range
+    if(signedFeederID<0 || signedFeederID>65535) {
+      //error, number not in a valid range
+      return false;
+      } else {
+      //valid number
+      return true;
+    }
+  }
+}
+
 /**
 * Read the input buffer and find any recognized commands.  One G or M command per line.
 */
@@ -325,6 +341,41 @@ void processCommand() {
         char idStr[22];
         sprintf(idStr, "ID: %u%s", id, (left ? "L" : "R"));
         sendAnswer(0,F(idStr));
+      } else {
+        sendAnswer(1,F(" no response from feeder"));
+      }
+
+      break;
+    }
+
+    case MCODE_SET_FEEDER_ID: {
+      int8_t signedFeederNo = (int)parseParameter('N',-1);
+      int32_t newFeederID = (int)parseParameter('X',-1);
+
+      //check for presence of FeederNo
+      if(!validFeederNo(signedFeederNo,1)) {
+        sendAnswer(1,F("feederNo missing or invalid"));
+        break;
+      }
+
+      //must be run from lane 1 of feeder, so adjust.
+      if((signedFeederNo % 2) != 0) {
+        --signedFeederNo;
+      }
+
+      //check for presence of FeederID
+      if(!validFeederID(newFeederID,1)) {
+        sendAnswer(1,F("feederID missing or invalid"));
+        break;
+      }
+
+      
+      if(feeders[signedFeederNo].setID(newFeederID)) {
+        if(feeders[signedFeederNo+1].setID(0)) {  // need to clear 2nd lane also
+          sendAnswer(0,F("ID set"));
+        } else {
+          sendAnswer(1,F(" no response from feeder"));
+        }
       } else {
         sendAnswer(1,F(" no response from feeder"));
       }

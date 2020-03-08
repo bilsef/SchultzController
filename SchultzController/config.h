@@ -2,14 +2,14 @@
 #define _CONFIG_h
 #include "arduino.h"
 
-#define BOARD96PIN
-//#define BOARD4PIN
+//#define BOARD96PIN
+#define BOARD4PIN
 
 // prints some extra information via serial1
 // uncomment to disable in production
 //#define DEBUG
 
-// simulates connected feederS
+// simulates connected feeders
 //#define SIMULATE
 
 
@@ -70,8 +70,9 @@
 #define MCODE_GET_RESET_COUNT 607
 #define MCODE_GET_PITCH 608
 #define MCODE_TOGGLE_PITCH 628
-#define MCODE_READ_EEPROM 630
 #define MCODE_GET_FEEDER_ID 610
+#define MCODE_SET_FEEDER_ID 640
+#define MCODE_READ_EEPROM 630
 #define MCODE_GET_FIRMWARE_INFO 615
 #define MCODE_START_SELF_TEST 650
 #define MCODE_STOP_SELF_TEST 651

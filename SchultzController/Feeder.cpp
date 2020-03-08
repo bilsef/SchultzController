@@ -173,6 +173,44 @@ bool FeederClass::sendCommand(uint8_t command, uint8_t *dataBuf) {
   return FeederClass::receiveMessage(dataBuf);
 }
 
+bool FeederClass::sendCommand(uint8_t command, uint8_t *dataBuf, uint8_t offset) {
+  uint8_t cmdLen = 3;
+  uint8_t buf[] = {cmdLen, command, this->lane, offset, 0};
+  uint8_t i;
+  uint8_t checksum = 0;
+  
+  while (Serial1.available()) {  // get rid of any leftover input data
+    Serial1.read();
+  }
+  
+  // calculate checksum
+  for (i = 0; i < cmdLen + 1; i++) {
+    checksum += buf[i];
+  }
+  buf[i] = checksum;
+  
+  #ifdef DEBUG
+    Serial.print(this->port);
+    Serial.print(F(" sending: "));
+      for (i = 0; i < cmdLen + 2; i++) {
+        Serial.print(buf[i],HEX);
+        Serial.print(' ');
+      }
+    Serial.println();
+    Serial1.write(command);
+  #endif
+
+  #ifdef SIMULATE
+    return true;
+  #endif
+  for (i = 0; i < cmdLen + 2; i++) {
+    FeederClass::write(buf[i]);
+  }
+  this->lastTimeCommandSent = millis();
+
+  return FeederClass::receiveMessage(dataBuf);
+}
+
 bool FeederClass::sendCommand(uint8_t command, uint8_t dataLen, uint8_t *data) {
   uint8_t msgLen = dataLen + 2;
 	uint8_t buf[msgLen+2];
@@ -289,13 +327,13 @@ bool FeederClass::sendAdvance(bool overrideError) {
 }
 
 bool FeederClass::setPitch(uint8_t pitch) {
-  uint8_t dataBuf[2];
+  uint8_t dataBuf[22];
 
   #ifdef DEBUG
     Serial.print(F("Set pitch to "));
     Serial.println(pitch);
   #endif
-  
+
   dataBuf[0] = pitch;
   dataBuf[1] = 0;
   
@@ -312,7 +350,7 @@ bool FeederClass::setPitch(uint8_t pitch) {
       Serial.println("send read EEPROM command");
     #endif
 
-  if (!FeederClass::sendCommand(CMD_EEPROM_READ, dataBuf)) {
+  if (!FeederClass::sendCommand(CMD_EEPROM_READ, dataBuf, 0)) {
     #ifdef DEBUG
       Serial.println(F("No ACK from feeder"));
     #endif
@@ -330,13 +368,21 @@ bool FeederClass::setPitch(uint8_t pitch) {
   }
 
   dataBuf[0] = 0;
-
   dataBuf[5] = pitch; // pitch byte
 
   #ifdef DEBUG
     Serial.println("send write EEPROM command");
   #endif
 
+  #ifdef DEBUG
+  Serial.print("EEPROM: ");
+  for (uint8_t i = 0; i < 17; i++) {
+    Serial.print(dataBuf[i],HEX);
+    Serial.print(' ');
+  }
+  Serial.println();
+  #endif
+  
   if (!FeederClass::sendCommand(CMD_EEPROM_WRITE, 17, dataBuf)) {
     #ifdef DEBUG
       Serial.println(F("No ACK from feeder"));
@@ -387,7 +433,7 @@ bool FeederClass::readEEPROM(uint8_t *dataBuf) {
       Serial.println("send read EEPROM command");
     #endif
 
-  if (!FeederClass::sendCommand(CMD_EEPROM_READ, dataBuf)) {
+  if (!FeederClass::sendCommand(CMD_EEPROM_READ, dataBuf, 0)) {
     #ifdef DEBUG
       Serial.println(F("No ACK from feeder"));
     #endif
@@ -433,7 +479,7 @@ bool FeederClass::clearFeedCount() {
       Serial.println("send read EEPROM command");
     #endif
 
-  if (!FeederClass::sendCommand(CMD_EEPROM_READ, dataBuf)) {
+  if (!FeederClass::sendCommand(CMD_EEPROM_READ, dataBuf, 0)) {
     #ifdef DEBUG
       Serial.println(F("No ACK from feeder"));
     #endif
@@ -451,11 +497,46 @@ bool FeederClass::clearFeedCount() {
   }
 
   dataBuf[0] = 0;
-  dataBuf[8] = 1;
 
   dataBuf[3] = 0; // count low byte
   dataBuf[4] = 0; // count mid byte
   dataBuf[6] = 0; // count high byte
+  #ifdef DEBUG
+    Serial.println("send write EEPROM command");
+  #endif
+
+  if (!FeederClass::sendCommand(CMD_EEPROM_WRITE, 17, dataBuf)) {
+    #ifdef DEBUG
+      Serial.println(F("No ACK from feeder"));
+    #endif
+    return false;
+  }
+  
+  #ifdef SIMULATE
+    for (uint8_t i = 0; i < 16; i++) {
+      this->eeprom[i] == dataBuf[i+1];
+    }
+  #endif
+  
+  return true;
+}
+
+bool FeederClass::setID(int32_t feederID) {
+  uint8_t dataBuf[22];
+
+  for (uint8_t i = 0; i < 22; i++) {
+    dataBuf[i] = 0;
+  }
+
+  if (this->lane == 1) {
+    dataBuf[1] = feederID & 0xFF; // low byte of ID
+    dataBuf[2] = (feederID >> 8) & 0xFF; // high byte of ID
+    dataBuf[7] = 0x31;
+    dataBuf[8] = 1;
+  } else {
+    dataBuf[8] = 0x3c;
+  }
+
   #ifdef DEBUG
     Serial.println("send write EEPROM command");
   #endif
