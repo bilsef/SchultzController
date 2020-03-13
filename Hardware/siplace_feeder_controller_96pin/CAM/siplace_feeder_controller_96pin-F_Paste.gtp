@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.5)-3*
-G04 #@! TF.CreationDate,2020-02-11T12:56:00-08:00*
-G04 #@! TF.ProjectId,siplace_feeder_controller_adapter,7369706c-6163-4655-9f66-65656465725f,rev?*
+G04 #@! TF.CreationDate,2020-03-12T17:45:38-07:00*
+G04 #@! TF.ProjectId,siplace_feeder_controller_96pin,7369706c-6163-4655-9f66-65656465725f,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Paste,Top*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.5)-3) date 2020-02-11 12:56:00*
+G04 Created by KiCad (PCBNEW (5.1.5)-3) date 2020-03-12 17:45:38*
 %MOMM*%
 %LPD*%
 G04 APERTURE LIST*
