@@ -1,0 +1,583 @@
+<openpnp-board version="1.1" name="sfc3.board.xml">
+   <dimensions units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+   <fiducials/>
+   <placements>
+      <placement version="1.4" id="FID1" side="Bottom" part-id="FIDUCIAL" type="Fiducial" enabled="true">
+         <location units="Millimeters" x="70.0" y="95.0" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="FID2" side="Bottom" part-id="FIDUCIAL" type="Fiducial" enabled="true">
+         <location units="Millimeters" x="5.0" y="5.0" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="FID3" side="Bottom" part-id="FIDUCIAL" type="Fiducial" enabled="true">
+         <location units="Millimeters" x="5.0" y="95.0" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q1" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.5" y="90.95" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q2" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.5" y="87.25" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q3" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.5" y="83.55" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q4" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.5" y="79.85" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q5" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.5" y="76.15" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q6" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.5" y="72.45" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q7" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.5" y="68.75" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q8" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.5" y="65.05" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q9" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.5" y="61.35" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q10" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.5" y="57.65" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q11" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.6" y="43.65" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q12" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.6" y="39.95" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q13" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.6" y="36.25" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q14" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.6" y="32.55" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q15" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.6" y="28.85" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q16" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.6" y="25.15" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q17" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.6" y="21.45" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q18" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.6" y="17.75" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q19" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.6" y="14.05" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q20" side="Bottom" part-id="BC846" type="Placement" enabled="true">
+         <location units="Millimeters" x="27.6" y="10.35" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q21" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.4" y="91.9" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q22" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.4" y="84.5" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q23" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.4" y="76.9" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q24" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.4" y="69.4" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q25" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.4" y="61.95" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q26" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.5" y="44.4" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q27" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.5" y="36.95" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q28" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.5" y="29.55" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q29" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.5" y="22.15" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q30" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.5" y="14.75" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q31" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.8" y="91.0" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q32" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.8" y="83.55" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q33" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.8" y="76.15" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q34" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.8" y="68.75" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q35" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.8" y="61.35" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q36" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.9" y="43.65" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q37" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.9" y="36.15" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q38" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.9" y="28.75" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q39" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.9" y="21.35" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q40" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.9" y="13.95" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q41" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.4" y="88.25" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q42" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.4" y="80.7" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q43" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.4" y="73.15" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q44" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.4" y="65.65" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q45" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.4" y="58.25" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q46" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.5" y="40.65" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q47" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.5" y="33.25" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q48" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.5" y="25.85" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q49" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.5" y="18.45" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q50" side="Bottom" part-id="2N7002" type="Placement" enabled="true">
+         <location units="Millimeters" x="40.5" y="11.05" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q51" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.8" y="87.25" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q52" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.8" y="79.85" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q53" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.8" y="72.45" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q54" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.8" y="65.05" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q55" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.8" y="57.65" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q56" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.9" y="39.9" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q57" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.9" y="32.45" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q58" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.9" y="25.05" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q59" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.9" y="17.65" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="Q60" side="Bottom" part-id="BC856" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.9" y="10.25" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R1" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="90.0" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R2" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="86.3" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R3" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="82.6" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R4" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="78.9" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R5" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="75.2" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R6" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="71.5" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R7" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="67.8" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R8" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="64.1" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R9" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="60.4" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R10" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="56.7" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R11" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="42.7" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R12" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="39.0" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R13" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="35.3" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R14" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="91.9" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R15" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="88.2" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R16" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="84.5" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R17" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="80.8" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R18" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="77.1" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R19" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="73.4" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R20" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="69.7" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R21" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="66.0" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R22" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="62.3" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R23" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.125" y="58.6" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R24" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="44.6" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R25" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="40.9" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R26" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="37.2" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R27" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="31.6" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R28" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="27.9" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R29" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="24.2" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R30" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="20.5" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R31" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="16.8" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R32" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="13.1" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R33" side="Bottom" part-id="4K7" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="9.4" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R34" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="33.5" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R35" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="29.8" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R36" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="26.1" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R37" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="22.4" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R38" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="18.7" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R39" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="15.0" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R40" side="Bottom" part-id="330" type="Placement" enabled="true">
+         <location units="Millimeters" x="24.225" y="11.3" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R41" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="63.3" y="62.069" z="0.0" rotation="-90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R52" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.0" y="91.925" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R53" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.075" y="84.4" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R54" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.075" y="77.0" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R55" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.075" y="69.6" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R56" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="36.975" y="62.1" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R57" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.075" y="44.5" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R58" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.075" y="37.0" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R59" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.075" y="29.6" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R60" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.075" y="22.2" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R61" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.075" y="14.8" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R62" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.3" y="91.025" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R63" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.3" y="83.525" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R64" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.3" y="76.125" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R65" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.3" y="68.725" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R66" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.3" y="61.325" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R67" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.4" y="43.575" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R68" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.4" y="36.075" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R69" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.4" y="28.675" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R70" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.4" y="21.275" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R71" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.4" y="13.875" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R82" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="36.975" y="88.2" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R83" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.075" y="80.7" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R84" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.025" y="73.3" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R85" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.025" y="65.8" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R86" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.0" y="58.4" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R87" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.075" y="40.8" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R88" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.075" y="33.3" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R89" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.075" y="25.9" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R90" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.075" y="18.5" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R91" side="Bottom" part-id="10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.075" y="11.1" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R92" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.3" y="87.275" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R93" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.3" y="79.825" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R94" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.3" y="72.425" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R95" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.3" y="64.975" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R96" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.3" y="57.625" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R97" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.4" y="39.875" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R98" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.4" y="32.375" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R99" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.4" y="24.975" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R100" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.4" y="17.575" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" id="R101" side="Bottom" part-id="2K2" type="Placement" enabled="true">
+         <location units="Millimeters" x="34.4" y="10.175" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+   </placements>
+   <solder-paste-pads/>
+</openpnp-board>

@@ -1,0 +1,56 @@
+
+
+   ---- Transcoding 'C:\Projects\siplace\siplace_feeder_controller_adapter\CAM\siplace_feeder_controller_adapter-B_Paste.gbp' ----   Sun Feb 09 13:40:17 2020
+
+D11   --> D100
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Projects\siplace\siplace_feeder_controller_adapter\CAM\siplace_feeder_controller_adapter-B_SilkS.gbo' ----   Sun Feb 09 13:40:18 2020
+
+D10   --> D101
+D11   --> D102
+D13   --> D103
+D14   --> D104
+D15   --> D105
+D16   --> D106
+D17   --> D107
+D19   --> D108
+D20   --> D109
+D21   --> D110
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Projects\siplace\siplace_feeder_controller_adapter\CAM\siplace_feeder_controller_adapter-Edge_Cuts.gm1' ----   Sun Feb 09 13:40:26 2020
+
+D10   --> D111
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Projects\siplace\siplace_feeder_controller_adapter\CAM\siplace_feeder_controller_adapter-F_Cu.gtl' ----   Sun Feb 09 13:40:26 2020
+
+D10   --> D112
+D11   --> D113
+D12   --> D114
+D13   --> D115
+D14   --> D116
+D15   --> D117
+D16   --> D118
+D17   --> D119
+D18   --> D120
+D19   --> D121
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Projects\siplace\siplace_feeder_controller_adapter\CAM\siplace_feeder_controller_adapter-F_SilkS.gto' ----   Sun Feb 09 13:40:26 2020
+
+D10   --> D122
+D11   --> D123
+D13   --> D124
+D14   --> D125
+D15   --> D126
+D16   --> D127
+D17   --> D128
+D18   --> D129
+D19   --> D130
+-----------------------------------------------------------------

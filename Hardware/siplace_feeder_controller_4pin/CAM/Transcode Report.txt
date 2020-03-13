@@ -1,0 +1,44 @@
+
+
+   ---- Transcoding 'C:\Projects\siplace\siplace_feeder_controller\CAM\siplace_feeder_controller-B_SilkS.gbo' ----   Fri Jan 24 14:11:02 2020
+
+D10   --> D100
+D11   --> D101
+D12   --> D102
+D14   --> D103
+D15   --> D104
+D16   --> D105
+D17   --> D106
+D18   --> D107
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Projects\siplace\siplace_feeder_controller\CAM\siplace_feeder_controller-Edge_Cuts.gm1' ----   Fri Jan 24 14:11:02 2020
+
+D10   --> D108
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Projects\siplace\siplace_feeder_controller\CAM\siplace_feeder_controller-F_Cu.gtl' ----   Fri Jan 24 14:11:02 2020
+
+D10   --> D109
+D11   --> D110
+D13   --> D111
+D14   --> D112
+D15   --> D113
+D16   --> D114
+D17   --> D115
+D18   --> D116
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Projects\siplace\siplace_feeder_controller\CAM\siplace_feeder_controller-F_SilkS.gto' ----   Fri Jan 24 14:11:02 2020
+
+D10   --> D117
+D11   --> D118
+D12   --> D119
+D13   --> D120
+D15   --> D121
+D16   --> D122
+D17   --> D123
+-----------------------------------------------------------------

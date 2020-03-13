@@ -2,8 +2,8 @@
 #define _CONFIG_h
 #include "arduino.h"
 
-//#define BOARD96PIN
-#define BOARD4PIN
+#define BOARD96PIN
+//#define BOARD4PIN
 
 // prints some extra information via serial1
 // uncomment to disable in production

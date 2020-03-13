@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name power)(type Legacy)(uri ${KIPRJMOD}/power.lib)(options "")(descr ""))
+  (lib (name arduino_nano_every)(type Legacy)(uri ${KIPRJMOD}/arduino_nano_every.lib)(options "")(descr ""))
+)

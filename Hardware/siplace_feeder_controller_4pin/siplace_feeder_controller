@@ -1,0 +1,13 @@
+Reference, Quantity, Value, Footprint, Datasheet
+A1 ,1,"Arduino_Nano_v3.x","Arduino_Nano_33:NANO_33_Socket_Castell","http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf"
+FID1 FID2 FID3 ,3,"Fiducial","Fiducial:Fiducial_1mm_Mask3mm","~"
+H1 H2 H3 H4 ,4,"MountingHole","MountingHole:MountingHole_3.2mm_M3","~"
+J1 J2 J3 J4 J5 J6 J7 J8 J9 J10 J11 J12 J13 J14 J15 J16 J17 J18 J19 J20 ,20,"Conn_01x04","Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical","~"
+J21 ,1,"Screw_Terminal_01x02","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal","~"
+Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9 Q10 Q11 Q12 Q13 Q14 Q15 Q16 Q17 Q18 Q19 Q20 ,20,"BC846","Package_TO_SOT_SMD:SOT-23","https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf"
+Q21 Q22 Q23 Q24 Q25 Q26 Q27 Q28 Q29 Q30 Q41 Q42 Q43 Q44 Q45 Q46 Q47 Q48 Q49 Q50 ,20,"2N7002","Package_TO_SOT_SMD:SOT-23","https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf"
+Q60 Q58 Q57 Q56 Q55 Q54 Q53 Q52 Q51 Q31 Q32 Q33 Q34 Q35 Q36 Q37 Q38 Q39 Q40 Q59 ,20,"BC856","Package_TO_SOT_SMD:SOT-23","http://www.fairchildsemi.com/ds/BC/BC856.pdf"
+R1 R2 R3 R4 R5 R6 R7 R8 R9 R10 R11 R12 R13 R27 R28 R29 R30 R31 R32 R33 ,20,"4K7","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+R14 R15 R16 R17 R18 R19 R20 R21 R22 R23 R24 R25 R26 R34 R35 R36 R37 R38 R39 R40 ,20,"330","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+R41 R71 R70 R69 R68 R67 R66 R65 R64 R63 R62 R101 R92 R93 R94 R95 R96 R97 R98 R99 R100 ,21,"2K2","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+R83 R84 R85 R86 R87 R88 R89 R91 R61 R60 R59 R58 R57 R56 R55 R54 R53 R52 R90 R82 ,20,"10K","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"

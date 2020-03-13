@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Arduino-NANO-33
+D Arduino NANO 33
+K connector
+F ~
+$ENDCMP
+#
+$CMP Arduino_Nano_Every
+D Arduino Nano v2.x
+K Arduino nano microcontroller module USB
+F https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf
+$ENDCMP
+#
+$CMP Arduino_Nano_v3.x
+D Arduino Nano v3.x
+K Arduino nano microcontroller module USB
+F http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf
+$ENDCMP
+#
+#End Doc Library

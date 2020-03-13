@@ -1,0 +1,2411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Projects\siplace\siplace_feeder_controller\siplace_feeder_controller.sch</source>
+    <date>1/23/2020 4:39:48 PM</date>
+    <tool>Eeschema (5.1.5)-3</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Siplace S Feeder Controller</title>
+        <company>Bill Ruckman</company>
+        <rev>0.1</rev>
+        <date>2020-01-18</date>
+        <source>siplace_feeder_controller.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/MCU and RX/" tstamps="/5ED4198E/">
+      <title_block>
+        <title>Siplace S Feeder Controller</title>
+        <company/>
+        <rev>0.1</rev>
+        <date>2020-01-18</date>
+        <source>file5ED4198D.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/TX/" tstamps="/5E2A746E/">
+      <title_block>
+        <title>Siplace S Feeder Controller</title>
+        <company/>
+        <rev>0.1</rev>
+        <date>2020-01-18</date>
+        <source>file5E2A746D.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Connectors/" tstamps="/5ED424F8/">
+      <title_block>
+        <title>Siplace S Feeder Controller</title>
+        <company/>
+        <rev>0.1</rev>
+        <date>2020-01-18</date>
+        <source>file5ED424F7.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="FID1">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_1mm_Mask3mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F22E448</tstamp>
+    </comp>
+    <comp ref="FID2">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_1mm_Mask3mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F22EB0F</tstamp>
+    </comp>
+    <comp ref="FID3">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_1mm_Mask3mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F22F0DB</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F22F8D5</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F22FF7E</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F2305EE</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F230C53</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EA18</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EA1E</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EA48</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC13</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC19</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC20</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC2C</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC32</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC39</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC45</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC4B</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC52</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC5E</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC64</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC6B</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC77</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC7D</tstamp>
+    </comp>
+    <comp ref="Q6">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC84</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC90</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC96</tstamp>
+    </comp>
+    <comp ref="Q7">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EC9D</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ECA9</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ECAF</tstamp>
+    </comp>
+    <comp ref="Q8">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ECB6</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ECC2</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ECC8</tstamp>
+    </comp>
+    <comp ref="Q9">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ECCF</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ECDB</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ECE1</tstamp>
+    </comp>
+    <comp ref="Q10">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ECE8</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ECF4</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ECFA</tstamp>
+    </comp>
+    <comp ref="Q11">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED01</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED0D</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED13</tstamp>
+    </comp>
+    <comp ref="Q12">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED1A</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED26</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED2C</tstamp>
+    </comp>
+    <comp ref="Q13">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED33</tstamp>
+    </comp>
+    <comp ref="R34">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED3F</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED45</tstamp>
+    </comp>
+    <comp ref="Q14">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED4C</tstamp>
+    </comp>
+    <comp ref="R35">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED58</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED5E</tstamp>
+    </comp>
+    <comp ref="Q15">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED65</tstamp>
+    </comp>
+    <comp ref="R36">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED71</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED77</tstamp>
+    </comp>
+    <comp ref="Q16">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED7E</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED8A</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED90</tstamp>
+    </comp>
+    <comp ref="Q17">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7ED97</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EDA3</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EDA9</tstamp>
+    </comp>
+    <comp ref="Q18">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EDB0</tstamp>
+    </comp>
+    <comp ref="R39">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EDBC</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EDC2</tstamp>
+    </comp>
+    <comp ref="Q19">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EDC9</tstamp>
+    </comp>
+    <comp ref="R40">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EDD5</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EDDB</tstamp>
+    </comp>
+    <comp ref="Q20">
+      <value>BC846</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5ED7EDE2</tstamp>
+    </comp>
+    <comp ref="A1">
+      <value>Arduino_Nano_v3.x</value>
+      <footprint>Arduino_Nano_33:NANO_33_Socket_Castell</footprint>
+      <datasheet>http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf</datasheet>
+      <libsource lib="siplace_feeder_controller-rescue" part="Arduino_Nano_v3.x-MCU_Module" description=""/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5E906D42</tstamp>
+    </comp>
+    <comp ref="R41">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCU and RX/" tstamps="/5ED4198E/"/>
+      <tstamp>5E906D48</tstamp>
+    </comp>
+    <comp ref="Q60">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E38D90E</tstamp>
+    </comp>
+    <comp ref="Q58">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3A406F</tstamp>
+    </comp>
+    <comp ref="Q57">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3A8C1C</tstamp>
+    </comp>
+    <comp ref="Q56">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3ADD83</tstamp>
+    </comp>
+    <comp ref="Q55">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3B2C1A</tstamp>
+    </comp>
+    <comp ref="Q54">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3B7959</tstamp>
+    </comp>
+    <comp ref="Q53">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3BCA0E</tstamp>
+    </comp>
+    <comp ref="Q52">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3C1C53</tstamp>
+    </comp>
+    <comp ref="R83">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3F0A46</tstamp>
+    </comp>
+    <comp ref="R84">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3F6715</tstamp>
+    </comp>
+    <comp ref="R85">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3FC5F6</tstamp>
+    </comp>
+    <comp ref="R86">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E4029CD</tstamp>
+    </comp>
+    <comp ref="R87">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E408F4A</tstamp>
+    </comp>
+    <comp ref="R88">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E40F725</tstamp>
+    </comp>
+    <comp ref="R89">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E416486</tstamp>
+    </comp>
+    <comp ref="R91">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E423FDA</tstamp>
+    </comp>
+    <comp ref="Q51">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3C6F2C</tstamp>
+    </comp>
+    <comp ref="R61">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E68D</tstamp>
+    </comp>
+    <comp ref="R71">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E687</tstamp>
+    </comp>
+    <comp ref="R60">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E67D</tstamp>
+    </comp>
+    <comp ref="R70">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E677</tstamp>
+    </comp>
+    <comp ref="R59">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E66D</tstamp>
+    </comp>
+    <comp ref="R69">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E667</tstamp>
+    </comp>
+    <comp ref="R58">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E65D</tstamp>
+    </comp>
+    <comp ref="R68">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E657</tstamp>
+    </comp>
+    <comp ref="R57">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E64D</tstamp>
+    </comp>
+    <comp ref="R67">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E647</tstamp>
+    </comp>
+    <comp ref="R56">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E63D</tstamp>
+    </comp>
+    <comp ref="R66">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E637</tstamp>
+    </comp>
+    <comp ref="R55">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E62D</tstamp>
+    </comp>
+    <comp ref="R65">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E627</tstamp>
+    </comp>
+    <comp ref="R54">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E61D</tstamp>
+    </comp>
+    <comp ref="R64">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E617</tstamp>
+    </comp>
+    <comp ref="R53">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E60D</tstamp>
+    </comp>
+    <comp ref="R63">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E607</tstamp>
+    </comp>
+    <comp ref="R52">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E5FC</tstamp>
+    </comp>
+    <comp ref="Q31">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E5EF</tstamp>
+    </comp>
+    <comp ref="Q32">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E5E8</tstamp>
+    </comp>
+    <comp ref="Q33">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E5E1</tstamp>
+    </comp>
+    <comp ref="Q34">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E5DA</tstamp>
+    </comp>
+    <comp ref="Q35">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E5D3</tstamp>
+    </comp>
+    <comp ref="Q36">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E5CC</tstamp>
+    </comp>
+    <comp ref="Q37">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E5C5</tstamp>
+    </comp>
+    <comp ref="Q38">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E5BE</tstamp>
+    </comp>
+    <comp ref="Q39">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E5B7</tstamp>
+    </comp>
+    <comp ref="Q40">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E5B0</tstamp>
+    </comp>
+    <comp ref="R62">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E44E5F6</tstamp>
+    </comp>
+    <comp ref="Q21">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F0EEF8B</tstamp>
+    </comp>
+    <comp ref="Q22">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F0F4289</tstamp>
+    </comp>
+    <comp ref="Q23">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F11A7FB</tstamp>
+    </comp>
+    <comp ref="Q24">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F12D1E6</tstamp>
+    </comp>
+    <comp ref="Q25">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F13F541</tstamp>
+    </comp>
+    <comp ref="Q26">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F151540</tstamp>
+    </comp>
+    <comp ref="Q27">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F1640B4</tstamp>
+    </comp>
+    <comp ref="Q28">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F177028</tstamp>
+    </comp>
+    <comp ref="Q29">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F18A792</tstamp>
+    </comp>
+    <comp ref="Q30">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F19E2BC</tstamp>
+    </comp>
+    <comp ref="Q59">
+      <value>BC856</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.fairchildsemi.com/ds/BC/BC856.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC856" description="0.1A Ic, 65V Vce, PNP Transistor, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E39F590</tstamp>
+    </comp>
+    <comp ref="R90">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E41CFA7</tstamp>
+    </comp>
+    <comp ref="R101">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E423FD4</tstamp>
+    </comp>
+    <comp ref="R92">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3CB916</tstamp>
+    </comp>
+    <comp ref="R93">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3F0A40</tstamp>
+    </comp>
+    <comp ref="R94">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3F670F</tstamp>
+    </comp>
+    <comp ref="R95">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3FC5F0</tstamp>
+    </comp>
+    <comp ref="R96">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E4029C7</tstamp>
+    </comp>
+    <comp ref="R97">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E408F44</tstamp>
+    </comp>
+    <comp ref="R98">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E40F71F</tstamp>
+    </comp>
+    <comp ref="R99">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E416480</tstamp>
+    </comp>
+    <comp ref="R100">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E41CFA1</tstamp>
+    </comp>
+    <comp ref="R82">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5E3CD71C</tstamp>
+    </comp>
+    <comp ref="Q41">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F2B4320</tstamp>
+    </comp>
+    <comp ref="Q42">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F2B4326</tstamp>
+    </comp>
+    <comp ref="Q43">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F2B432C</tstamp>
+    </comp>
+    <comp ref="Q44">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F2B4332</tstamp>
+    </comp>
+    <comp ref="Q45">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F2B4338</tstamp>
+    </comp>
+    <comp ref="Q46">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F2B433E</tstamp>
+    </comp>
+    <comp ref="Q47">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F2B4344</tstamp>
+    </comp>
+    <comp ref="Q48">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F2B434A</tstamp>
+    </comp>
+    <comp ref="Q49">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F2B4350</tstamp>
+    </comp>
+    <comp ref="Q50">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/TX/" tstamps="/5E2A746E/"/>
+      <tstamp>5F2B4356</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDAC148</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDAE17D</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDAEEA8</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDAFA05</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDB04EB</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDB1E2D</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDB1E39</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDB1E45</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDB1E51</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDB1E5D</tstamp>
+    </comp>
+    <comp ref="J11">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDC7749</tstamp>
+    </comp>
+    <comp ref="J12">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDC7755</tstamp>
+    </comp>
+    <comp ref="J13">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDC7761</tstamp>
+    </comp>
+    <comp ref="J14">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDC776D</tstamp>
+    </comp>
+    <comp ref="J15">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDC7779</tstamp>
+    </comp>
+    <comp ref="J16">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDC7785</tstamp>
+    </comp>
+    <comp ref="J17">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDC7791</tstamp>
+    </comp>
+    <comp ref="J18">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDC779D</tstamp>
+    </comp>
+    <comp ref="J19">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDC77A9</tstamp>
+    </comp>
+    <comp ref="J20">
+      <value>Conn_01x04</value>
+      <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDC77B5</tstamp>
+    </comp>
+    <comp ref="J21">
+      <value>Screw_Terminal_01x02</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Connectors/" tstamps="/5ED424F8/"/>
+      <tstamp>5EDD91C3</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Screw_Terminal_01x02">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="Fiducial">
+      <description>Fiducial Marker</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Fiducial*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FID</field>
+        <field name="Value">Fiducial</field>
+      </fields>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="BC807">
+      <aliases>
+        <alias>BC808</alias>
+        <alias>BC856</alias>
+        <alias>BC857</alias>
+        <alias>BC858</alias>
+        <alias>BC859</alias>
+        <alias>BC860</alias>
+        <alias>MMBT3906</alias>
+      </aliases>
+      <description>0.8A Ic, 45V Vce, PNP Transistor, SOT-23</description>
+      <docs>http://www.fairchildsemi.com/ds/BC/BC807.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC807</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="BC817">
+      <aliases>
+        <alias>BC818</alias>
+        <alias>BC846</alias>
+        <alias>BC847</alias>
+        <alias>BC848</alias>
+        <alias>BC849</alias>
+        <alias>BC850</alias>
+        <alias>MMBT3904</alias>
+        <alias>MMBT5550L</alias>
+        <alias>MMBT5551L</alias>
+      </aliases>
+      <description>0.8A Ic, 45V Vce, NPN Transistor, SOT-23</description>
+      <docs>http://www.fairchildsemi.com/ds/BC/BC817.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC817</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="BSS138">
+      <aliases>
+        <alias>2N7002</alias>
+        <alias>2N7002E</alias>
+        <alias>2N7002H</alias>
+        <alias>2N7002K</alias>
+        <alias>BS170F</alias>
+        <alias>BS870</alias>
+        <alias>BSN20</alias>
+        <alias>BSS123</alias>
+        <alias>BSS127S</alias>
+        <alias>DMG2302U</alias>
+        <alias>DMG3402L</alias>
+        <alias>DMG3404L</alias>
+        <alias>DMG3406L</alias>
+        <alias>DMG3414U</alias>
+        <alias>DMG3418L</alias>
+        <alias>DMN10H220L</alias>
+        <alias>DMN10H700S</alias>
+        <alias>DMN13H750S</alias>
+        <alias>DMN2041L</alias>
+        <alias>DMN2050L</alias>
+        <alias>DMN2056U</alias>
+        <alias>DMN2058U</alias>
+        <alias>DMN2075U</alias>
+        <alias>DMN2230U</alias>
+        <alias>DMN24H11DS</alias>
+        <alias>DMN24H3D5L</alias>
+        <alias>DMN3042L</alias>
+        <alias>DMN3051L</alias>
+        <alias>DMN30H4D0L</alias>
+        <alias>DMN3110S</alias>
+        <alias>DMN3150L</alias>
+        <alias>DMN3300U</alias>
+        <alias>DMN3404L</alias>
+        <alias>DMN6075S</alias>
+        <alias>DMN6140L</alias>
+        <alias>DMN67D7L</alias>
+        <alias>DMN67D8L</alias>
+        <alias>MMBF170</alias>
+        <alias>VN10LF</alias>
+        <alias>ZVN3306F</alias>
+        <alias>ZVN3310F</alias>
+        <alias>ZVN3320F</alias>
+        <alias>ZVN4106F</alias>
+        <alias>ZXM61N02F</alias>
+        <alias>ZXM61N03F</alias>
+        <alias>ZXMN10A07F</alias>
+        <alias>ZXMN2A01F</alias>
+        <alias>ZXMN2A14F</alias>
+        <alias>ZXMN2B01F</alias>
+        <alias>ZXMN2B14FH</alias>
+        <alias>ZXMN2F30FH</alias>
+        <alias>ZXMN2F34FH</alias>
+        <alias>ZXMN3A01F</alias>
+        <alias>ZXMN3A14F</alias>
+        <alias>ZXMN3B01F</alias>
+        <alias>ZXMN3B14F</alias>
+        <alias>ZXMN3F30FH</alias>
+        <alias>ZXMN6A07F</alias>
+        <alias>IRLML0030</alias>
+        <alias>IRLML2060</alias>
+      </aliases>
+      <description>50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23</description>
+      <docs>https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BSS138</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="siplace_feeder_controller-rescue" part="Arduino_Nano_v3.x-MCU_Module">
+      <footprints>
+        <fp>Arduino*Nano*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">Arduino_Nano_v3.x-MCU_Module</field>
+        <field name="Footprint">Module:Arduino_Nano</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D1/TX" type="BiDi"/>
+        <pin num="2" name="D0/RX" type="BiDi"/>
+        <pin num="3" name="~RESET" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="D2" type="BiDi"/>
+        <pin num="6" name="D3" type="BiDi"/>
+        <pin num="7" name="D4" type="BiDi"/>
+        <pin num="8" name="D5" type="BiDi"/>
+        <pin num="9" name="D6" type="BiDi"/>
+        <pin num="10" name="D7" type="BiDi"/>
+        <pin num="11" name="D8" type="BiDi"/>
+        <pin num="12" name="D9" type="BiDi"/>
+        <pin num="13" name="D10" type="BiDi"/>
+        <pin num="14" name="D11" type="BiDi"/>
+        <pin num="15" name="D12" type="BiDi"/>
+        <pin num="16" name="D13" type="BiDi"/>
+        <pin num="17" name="3V3" type="power_out"/>
+        <pin num="18" name="AREF" type="input"/>
+        <pin num="19" name="A0" type="BiDi"/>
+        <pin num="20" name="A1" type="BiDi"/>
+        <pin num="21" name="A2" type="BiDi"/>
+        <pin num="22" name="A3" type="BiDi"/>
+        <pin num="23" name="A4" type="BiDi"/>
+        <pin num="24" name="A5" type="BiDi"/>
+        <pin num="25" name="A6" type="BiDi"/>
+        <pin num="26" name="A7" type="BiDi"/>
+        <pin num="27" name="+5V" type="power_out"/>
+        <pin num="28" name="~RESET" type="input"/>
+        <pin num="29" name="GND" type="power_in"/>
+        <pin num="30" name="VIN" type="power_in"/>
+        <pin num="31" name="GND" type="passive"/>
+        <pin num="32" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Mechanical.lib</uri>
+    </library>
+    <library logical="Transistor_BJT">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Transistor_BJT.lib</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Transistor_FET.lib</uri>
+    </library>
+    <library logical="siplace_feeder_controller-rescue">
+      <uri>C:\Projects\siplace\siplace_feeder_controller/siplace_feeder_controller-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="F19_TX">
+      <node ref="A1" pin="15"/>
+      <node ref="Q50" pin="1"/>
+    </net>
+    <net code="2" name="F14_TX">
+      <node ref="Q28" pin="1"/>
+      <node ref="A1" pin="12"/>
+    </net>
+    <net code="3" name="F12_TX">
+      <node ref="Q27" pin="1"/>
+      <node ref="A1" pin="11"/>
+    </net>
+    <net code="4" name="F10_TX">
+      <node ref="A1" pin="10"/>
+      <node ref="Q26" pin="1"/>
+    </net>
+    <net code="5" name="F16_TX">
+      <node ref="A1" pin="13"/>
+      <node ref="Q29" pin="1"/>
+    </net>
+    <net code="6" name="F17_TX">
+      <node ref="Q49" pin="1"/>
+      <node ref="A1" pin="16"/>
+    </net>
+    <net code="7" name="F15_TX">
+      <node ref="A1" pin="19"/>
+      <node ref="Q48" pin="1"/>
+    </net>
+    <net code="8" name="F13_TX">
+      <node ref="A1" pin="20"/>
+      <node ref="Q47" pin="1"/>
+    </net>
+    <net code="9" name="F11_TX">
+      <node ref="Q46" pin="1"/>
+      <node ref="A1" pin="21"/>
+    </net>
+    <net code="10" name="F9_TX">
+      <node ref="A1" pin="22"/>
+      <node ref="Q45" pin="1"/>
+    </net>
+    <net code="11" name="F7_TX">
+      <node ref="Q44" pin="1"/>
+      <node ref="A1" pin="23"/>
+    </net>
+    <net code="12" name="F5_TX">
+      <node ref="A1" pin="24"/>
+      <node ref="Q43" pin="1"/>
+    </net>
+    <net code="13" name="F18_TX">
+      <node ref="A1" pin="14"/>
+      <node ref="Q30" pin="1"/>
+    </net>
+    <net code="14" name="Net-(Q22-Pad3)">
+      <node ref="R53" pin="2"/>
+      <node ref="Q22" pin="3"/>
+    </net>
+    <net code="15" name="Net-(Q23-Pad3)">
+      <node ref="Q23" pin="3"/>
+      <node ref="R54" pin="2"/>
+    </net>
+    <net code="16" name="Net-(Q33-Pad1)">
+      <node ref="Q33" pin="1"/>
+      <node ref="R54" pin="1"/>
+      <node ref="R64" pin="2"/>
+    </net>
+    <net code="17" name="Net-(Q24-Pad3)">
+      <node ref="Q24" pin="3"/>
+      <node ref="R55" pin="2"/>
+    </net>
+    <net code="18" name="Net-(Q34-Pad1)">
+      <node ref="R65" pin="2"/>
+      <node ref="R55" pin="1"/>
+      <node ref="Q34" pin="1"/>
+    </net>
+    <net code="19" name="Net-(Q21-Pad3)">
+      <node ref="Q21" pin="3"/>
+      <node ref="R52" pin="2"/>
+    </net>
+    <net code="20" name="Net-(Q32-Pad1)">
+      <node ref="R53" pin="1"/>
+      <node ref="Q32" pin="1"/>
+      <node ref="R63" pin="2"/>
+    </net>
+    <net code="21" name="Net-(Q29-Pad3)">
+      <node ref="Q29" pin="3"/>
+      <node ref="R60" pin="2"/>
+    </net>
+    <net code="22" name="Net-(Q28-Pad3)">
+      <node ref="Q28" pin="3"/>
+      <node ref="R59" pin="2"/>
+    </net>
+    <net code="23" name="Net-(Q38-Pad1)">
+      <node ref="R69" pin="2"/>
+      <node ref="Q38" pin="1"/>
+      <node ref="R59" pin="1"/>
+    </net>
+    <net code="24" name="Net-(Q39-Pad1)">
+      <node ref="R60" pin="1"/>
+      <node ref="R70" pin="2"/>
+      <node ref="Q39" pin="1"/>
+    </net>
+    <net code="25" name="Net-(Q30-Pad3)">
+      <node ref="R61" pin="2"/>
+      <node ref="Q30" pin="3"/>
+    </net>
+    <net code="26" name="Net-(Q40-Pad1)">
+      <node ref="R61" pin="1"/>
+      <node ref="R71" pin="2"/>
+      <node ref="Q40" pin="1"/>
+    </net>
+    <net code="27" name="Net-(Q25-Pad3)">
+      <node ref="R56" pin="2"/>
+      <node ref="Q25" pin="3"/>
+    </net>
+    <net code="28" name="Net-(Q35-Pad1)">
+      <node ref="Q35" pin="1"/>
+      <node ref="R56" pin="1"/>
+      <node ref="R66" pin="2"/>
+    </net>
+    <net code="29" name="Net-(Q26-Pad3)">
+      <node ref="R57" pin="2"/>
+      <node ref="Q26" pin="3"/>
+    </net>
+    <net code="30" name="F3_TX">
+      <node ref="Q42" pin="1"/>
+      <node ref="A1" pin="25"/>
+    </net>
+    <net code="31" name="Net-(Q36-Pad1)">
+      <node ref="R57" pin="1"/>
+      <node ref="R67" pin="2"/>
+      <node ref="Q36" pin="1"/>
+    </net>
+    <net code="32" name="Net-(Q27-Pad3)">
+      <node ref="Q27" pin="3"/>
+      <node ref="R58" pin="2"/>
+    </net>
+    <net code="33" name="Net-(Q37-Pad1)">
+      <node ref="R58" pin="1"/>
+      <node ref="R68" pin="2"/>
+      <node ref="Q37" pin="1"/>
+    </net>
+    <net code="34" name="GND">
+      <node ref="R35" pin="1"/>
+      <node ref="Q14" pin="2"/>
+      <node ref="R34" pin="1"/>
+      <node ref="Q29" pin="2"/>
+      <node ref="Q28" pin="2"/>
+      <node ref="J20" pin="2"/>
+      <node ref="Q22" pin="2"/>
+      <node ref="Q23" pin="2"/>
+      <node ref="Q30" pin="2"/>
+      <node ref="Q21" pin="2"/>
+      <node ref="Q24" pin="2"/>
+      <node ref="Q25" pin="2"/>
+      <node ref="Q26" pin="2"/>
+      <node ref="Q27" pin="2"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="R17" pin="1"/>
+      <node ref="Q5" pin="2"/>
+      <node ref="R19" pin="1"/>
+      <node ref="A1" pin="32"/>
+      <node ref="R18" pin="1"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="R15" pin="1"/>
+      <node ref="Q16" pin="2"/>
+      <node ref="Q20" pin="2"/>
+      <node ref="Q17" pin="2"/>
+      <node ref="R37" pin="1"/>
+      <node ref="Q18" pin="2"/>
+      <node ref="A1" pin="29"/>
+      <node ref="R38" pin="1"/>
+      <node ref="A1" pin="31"/>
+      <node ref="R20" pin="1"/>
+      <node ref="R23" pin="1"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="Q10" pin="2"/>
+      <node ref="R16" pin="1"/>
+      <node ref="R24" pin="1"/>
+      <node ref="Q9" pin="2"/>
+      <node ref="R22" pin="1"/>
+      <node ref="R21" pin="1"/>
+      <node ref="A1" pin="4"/>
+      <node ref="Q7" pin="2"/>
+      <node ref="R14" pin="1"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="Q8" pin="2"/>
+      <node ref="Q6" pin="2"/>
+      <node ref="R25" pin="1"/>
+      <node ref="Q12" pin="2"/>
+      <node ref="Q11" pin="2"/>
+      <node ref="R36" pin="1"/>
+      <node ref="Q15" pin="2"/>
+      <node ref="R40" pin="1"/>
+      <node ref="Q19" pin="2"/>
+      <node ref="R39" pin="1"/>
+      <node ref="Q13" pin="2"/>
+      <node ref="R26" pin="1"/>
+      <node ref="J8" pin="2"/>
+      <node ref="J9" pin="2"/>
+      <node ref="J6" pin="2"/>
+      <node ref="J7" pin="2"/>
+      <node ref="J21" pin="2"/>
+      <node ref="Q47" pin="2"/>
+      <node ref="J14" pin="2"/>
+      <node ref="Q42" pin="2"/>
+      <node ref="Q43" pin="2"/>
+      <node ref="Q48" pin="2"/>
+      <node ref="J19" pin="2"/>
+      <node ref="Q44" pin="2"/>
+      <node ref="J15" pin="2"/>
+      <node ref="J18" pin="2"/>
+      <node ref="Q45" pin="2"/>
+      <node ref="Q41" pin="2"/>
+      <node ref="J11" pin="2"/>
+      <node ref="Q46" pin="2"/>
+      <node ref="J13" pin="2"/>
+      <node ref="Q50" pin="2"/>
+      <node ref="J3" pin="2"/>
+      <node ref="Q49" pin="2"/>
+      <node ref="J12" pin="2"/>
+      <node ref="J1" pin="2"/>
+      <node ref="J5" pin="2"/>
+      <node ref="J10" pin="2"/>
+      <node ref="J2" pin="2"/>
+      <node ref="J4" pin="2"/>
+      <node ref="J16" pin="2"/>
+      <node ref="J17" pin="2"/>
+    </net>
+    <net code="35" name="F1_TX">
+      <node ref="Q41" pin="1"/>
+      <node ref="A1" pin="26"/>
+    </net>
+    <net code="36" name="Net-(Q58-Pad1)">
+      <node ref="R89" pin="1"/>
+      <node ref="R99" pin="2"/>
+      <node ref="Q58" pin="1"/>
+    </net>
+    <net code="37" name="FEEDER7_TX">
+      <node ref="Q54" pin="3"/>
+      <node ref="J14" pin="4"/>
+    </net>
+    <net code="38" name="FEEDER19_TX">
+      <node ref="J20" pin="4"/>
+      <node ref="Q60" pin="3"/>
+    </net>
+    <net code="39" name="FEEDER15_TX">
+      <node ref="J18" pin="4"/>
+      <node ref="Q58" pin="3"/>
+    </net>
+    <net code="40" name="FEEDER13_TX">
+      <node ref="J17" pin="4"/>
+      <node ref="Q57" pin="3"/>
+    </net>
+    <net code="41" name="FEEDER11_TX">
+      <node ref="Q56" pin="3"/>
+      <node ref="J16" pin="4"/>
+    </net>
+    <net code="42" name="FEEDER9_TX">
+      <node ref="Q55" pin="3"/>
+      <node ref="J15" pin="4"/>
+    </net>
+    <net code="43" name="FEEDER5_TX">
+      <node ref="J13" pin="4"/>
+      <node ref="Q53" pin="3"/>
+    </net>
+    <net code="44" name="FEEDER3_TX">
+      <node ref="J12" pin="4"/>
+      <node ref="Q52" pin="3"/>
+    </net>
+    <net code="45" name="FEEDER1_TX">
+      <node ref="J11" pin="4"/>
+      <node ref="Q51" pin="3"/>
+    </net>
+    <net code="46" name="Net-(Q50-Pad3)">
+      <node ref="Q50" pin="3"/>
+      <node ref="R91" pin="2"/>
+    </net>
+    <net code="47" name="Net-(Q60-Pad1)">
+      <node ref="R101" pin="2"/>
+      <node ref="R91" pin="1"/>
+      <node ref="Q60" pin="1"/>
+    </net>
+    <net code="48" name="Net-(Q48-Pad3)">
+      <node ref="Q48" pin="3"/>
+      <node ref="R89" pin="2"/>
+    </net>
+    <net code="49" name="Net-(Q47-Pad3)">
+      <node ref="Q47" pin="3"/>
+      <node ref="R88" pin="2"/>
+    </net>
+    <net code="50" name="Net-(Q46-Pad3)">
+      <node ref="Q46" pin="3"/>
+      <node ref="R87" pin="2"/>
+    </net>
+    <net code="51" name="Net-(Q54-Pad1)">
+      <node ref="Q54" pin="1"/>
+      <node ref="R85" pin="1"/>
+      <node ref="R95" pin="2"/>
+    </net>
+    <net code="52" name="Net-(Q56-Pad1)">
+      <node ref="Q56" pin="1"/>
+      <node ref="R97" pin="2"/>
+      <node ref="R87" pin="1"/>
+    </net>
+    <net code="53" name="Net-(Q45-Pad3)">
+      <node ref="R86" pin="2"/>
+      <node ref="Q45" pin="3"/>
+    </net>
+    <net code="54" name="Net-(Q44-Pad3)">
+      <node ref="R85" pin="2"/>
+      <node ref="Q44" pin="3"/>
+    </net>
+    <net code="55" name="Net-(Q43-Pad3)">
+      <node ref="Q43" pin="3"/>
+      <node ref="R84" pin="2"/>
+    </net>
+    <net code="56" name="Net-(Q42-Pad3)">
+      <node ref="Q42" pin="3"/>
+      <node ref="R83" pin="2"/>
+    </net>
+    <net code="57" name="Net-(Q52-Pad1)">
+      <node ref="Q52" pin="1"/>
+      <node ref="R93" pin="2"/>
+      <node ref="R83" pin="1"/>
+    </net>
+    <net code="58" name="Net-(Q49-Pad3)">
+      <node ref="Q49" pin="3"/>
+      <node ref="R90" pin="2"/>
+    </net>
+    <net code="59" name="Net-(Q41-Pad3)">
+      <node ref="Q41" pin="3"/>
+      <node ref="R82" pin="2"/>
+    </net>
+    <net code="60" name="Net-(Q55-Pad1)">
+      <node ref="R86" pin="1"/>
+      <node ref="R96" pin="2"/>
+      <node ref="Q55" pin="1"/>
+    </net>
+    <net code="61" name="Net-(Q51-Pad1)">
+      <node ref="Q51" pin="1"/>
+      <node ref="R82" pin="1"/>
+      <node ref="R92" pin="2"/>
+    </net>
+    <net code="62" name="Net-(Q57-Pad1)">
+      <node ref="R88" pin="1"/>
+      <node ref="R98" pin="2"/>
+      <node ref="Q57" pin="1"/>
+    </net>
+    <net code="63" name="Net-(Q59-Pad1)">
+      <node ref="R100" pin="2"/>
+      <node ref="Q59" pin="1"/>
+      <node ref="R90" pin="1"/>
+    </net>
+    <net code="64" name="Net-(Q53-Pad1)">
+      <node ref="Q53" pin="1"/>
+      <node ref="R84" pin="1"/>
+      <node ref="R94" pin="2"/>
+    </net>
+    <net code="65" name="+30V">
+      <node ref="J11" pin="1"/>
+      <node ref="J14" pin="1"/>
+      <node ref="J13" pin="1"/>
+      <node ref="J16" pin="1"/>
+      <node ref="J20" pin="1"/>
+      <node ref="J19" pin="1"/>
+      <node ref="J15" pin="1"/>
+      <node ref="J12" pin="1"/>
+      <node ref="J18" pin="1"/>
+      <node ref="J6" pin="1"/>
+      <node ref="J7" pin="1"/>
+      <node ref="J21" pin="1"/>
+      <node ref="J8" pin="1"/>
+      <node ref="J17" pin="1"/>
+      <node ref="J4" pin="1"/>
+      <node ref="J5" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J10" pin="1"/>
+      <node ref="J9" pin="1"/>
+      <node ref="Q54" pin="2"/>
+      <node ref="Q55" pin="2"/>
+      <node ref="Q56" pin="2"/>
+      <node ref="Q57" pin="2"/>
+      <node ref="R67" pin="1"/>
+      <node ref="R68" pin="1"/>
+      <node ref="Q58" pin="2"/>
+      <node ref="Q60" pin="2"/>
+      <node ref="Q52" pin="2"/>
+      <node ref="R62" pin="1"/>
+      <node ref="R101" pin="1"/>
+      <node ref="Q37" pin="2"/>
+      <node ref="Q36" pin="2"/>
+      <node ref="Q35" pin="2"/>
+      <node ref="Q34" pin="2"/>
+      <node ref="Q40" pin="2"/>
+      <node ref="R92" pin="1"/>
+      <node ref="Q39" pin="2"/>
+      <node ref="Q38" pin="2"/>
+      <node ref="Q59" pin="2"/>
+      <node ref="Q53" pin="2"/>
+      <node ref="R95" pin="1"/>
+      <node ref="R97" pin="1"/>
+      <node ref="R96" pin="1"/>
+      <node ref="R98" pin="1"/>
+      <node ref="R94" pin="1"/>
+      <node ref="R93" pin="1"/>
+      <node ref="R100" pin="1"/>
+      <node ref="R99" pin="1"/>
+      <node ref="R64" pin="1"/>
+      <node ref="R63" pin="1"/>
+      <node ref="R65" pin="1"/>
+      <node ref="Q31" pin="2"/>
+      <node ref="Q33" pin="2"/>
+      <node ref="Q51" pin="2"/>
+      <node ref="R70" pin="1"/>
+      <node ref="R69" pin="1"/>
+      <node ref="R71" pin="1"/>
+      <node ref="R66" pin="1"/>
+      <node ref="Q32" pin="2"/>
+    </net>
+    <net code="66" name="FEEDER0_TX">
+      <node ref="Q31" pin="3"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="67" name="FEEDER2_TX">
+      <node ref="Q32" pin="3"/>
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="68" name="FEEDER4_TX">
+      <node ref="Q33" pin="3"/>
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="69" name="FEEDER6_TX">
+      <node ref="Q34" pin="3"/>
+      <node ref="J4" pin="4"/>
+    </net>
+    <net code="70" name="FEEDER8_TX">
+      <node ref="Q35" pin="3"/>
+      <node ref="J5" pin="4"/>
+    </net>
+    <net code="71" name="Net-(Q31-Pad1)">
+      <node ref="R52" pin="1"/>
+      <node ref="Q31" pin="1"/>
+      <node ref="R62" pin="2"/>
+    </net>
+    <net code="72" name="FEEDER14_TX">
+      <node ref="Q38" pin="3"/>
+      <node ref="J8" pin="4"/>
+    </net>
+    <net code="73" name="FEEDER16_TX">
+      <node ref="J9" pin="4"/>
+      <node ref="Q39" pin="3"/>
+    </net>
+    <net code="74" name="FEEDER18_TX">
+      <node ref="J10" pin="4"/>
+      <node ref="Q40" pin="3"/>
+    </net>
+    <net code="75" name="FEEDER12_TX">
+      <node ref="Q37" pin="3"/>
+      <node ref="J7" pin="4"/>
+    </net>
+    <net code="76" name="FEEDER10_TX">
+      <node ref="J6" pin="4"/>
+      <node ref="Q36" pin="3"/>
+    </net>
+    <net code="77" name="FEEDER17_TX">
+      <node ref="Q59" pin="3"/>
+      <node ref="J19" pin="4"/>
+    </net>
+    <net code="78" name="Net-(Q14-Pad1)">
+      <node ref="R27" pin="1"/>
+      <node ref="Q14" pin="1"/>
+    </net>
+    <net code="79" name="FEEDER13_RX">
+      <node ref="J17" pin="3"/>
+      <node ref="R34" pin="2"/>
+      <node ref="R27" pin="2"/>
+    </net>
+    <net code="80" name="Net-(Q16-Pad1)">
+      <node ref="Q16" pin="1"/>
+      <node ref="R29" pin="1"/>
+    </net>
+    <net code="81" name="Net-(Q15-Pad1)">
+      <node ref="Q15" pin="1"/>
+      <node ref="R28" pin="1"/>
+    </net>
+    <net code="82" name="FEEDER14_RX">
+      <node ref="R28" pin="2"/>
+      <node ref="R35" pin="2"/>
+      <node ref="J8" pin="3"/>
+    </net>
+    <net code="83" name="FEEDER11_RX">
+      <node ref="R12" pin="2"/>
+      <node ref="R25" pin="2"/>
+      <node ref="J16" pin="3"/>
+    </net>
+    <net code="84" name="Net-(Q12-Pad1)">
+      <node ref="Q12" pin="1"/>
+      <node ref="R12" pin="1"/>
+    </net>
+    <net code="85" name="Net-(Q11-Pad1)">
+      <node ref="R11" pin="1"/>
+      <node ref="Q11" pin="1"/>
+    </net>
+    <net code="86" name="Net-(Q13-Pad1)">
+      <node ref="Q13" pin="1"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="87" name="FEEDER12_RX">
+      <node ref="R13" pin="2"/>
+      <node ref="J7" pin="3"/>
+      <node ref="R26" pin="2"/>
+    </net>
+    <net code="88" name="FEEDER15_RX">
+      <node ref="J18" pin="3"/>
+      <node ref="R29" pin="2"/>
+      <node ref="R36" pin="2"/>
+    </net>
+    <net code="89" name="Net-(Q19-Pad1)">
+      <node ref="Q19" pin="1"/>
+      <node ref="R32" pin="1"/>
+    </net>
+    <net code="90" name="Net-(Q20-Pad1)">
+      <node ref="R33" pin="1"/>
+      <node ref="Q20" pin="1"/>
+    </net>
+    <net code="91" name="FEEDER18_RX">
+      <node ref="R39" pin="2"/>
+      <node ref="R32" pin="2"/>
+      <node ref="J10" pin="3"/>
+    </net>
+    <net code="92" name="FEEDER19_RX">
+      <node ref="J20" pin="3"/>
+      <node ref="R40" pin="2"/>
+      <node ref="R33" pin="2"/>
+    </net>
+    <net code="93" name="FEEDER16_RX">
+      <node ref="J9" pin="3"/>
+      <node ref="R37" pin="2"/>
+      <node ref="R30" pin="2"/>
+    </net>
+    <net code="94" name="Net-(Q17-Pad1)">
+      <node ref="R30" pin="1"/>
+      <node ref="Q17" pin="1"/>
+    </net>
+    <net code="95" name="FEEDER17_RX">
+      <node ref="J19" pin="3"/>
+      <node ref="R31" pin="2"/>
+      <node ref="R38" pin="2"/>
+    </net>
+    <net code="96" name="Net-(Q18-Pad1)">
+      <node ref="R31" pin="1"/>
+      <node ref="Q18" pin="1"/>
+    </net>
+    <net code="97" name="Net-(Q4-Pad1)">
+      <node ref="Q4" pin="1"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="98" name="FEEDER3_RX">
+      <node ref="R4" pin="2"/>
+      <node ref="R17" pin="2"/>
+      <node ref="J12" pin="3"/>
+    </net>
+    <net code="99" name="Net-(Q3-Pad1)">
+      <node ref="Q3" pin="1"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="100" name="Net-(Q5-Pad1)">
+      <node ref="Q5" pin="1"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="101" name="FEEDER4_RX">
+      <node ref="J3" pin="3"/>
+      <node ref="R18" pin="2"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="102" name="FEEDER1_RX">
+      <node ref="J11" pin="3"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="103" name="Net-(Q1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="104" name="Net-(Q2-Pad1)">
+      <node ref="R2" pin="1"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="105" name="FEEDER0_RX">
+      <node ref="J1" pin="3"/>
+      <node ref="R14" pin="2"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="106" name="FEEDER2_RX">
+      <node ref="R16" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="107" name="Net-(Q9-Pad1)">
+      <node ref="R9" pin="1"/>
+      <node ref="Q9" pin="1"/>
+    </net>
+    <net code="108" name="FEEDER8_RX">
+      <node ref="R9" pin="2"/>
+      <node ref="R22" pin="2"/>
+      <node ref="J5" pin="3"/>
+    </net>
+    <net code="109" name="FEEDER10_RX">
+      <node ref="R11" pin="2"/>
+      <node ref="J6" pin="3"/>
+      <node ref="R24" pin="2"/>
+    </net>
+    <net code="110" name="Net-(Q10-Pad1)">
+      <node ref="Q10" pin="1"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="111" name="Net-(Q8-Pad1)">
+      <node ref="R8" pin="1"/>
+      <node ref="Q8" pin="1"/>
+    </net>
+    <net code="112" name="FEEDER9_RX">
+      <node ref="R23" pin="2"/>
+      <node ref="J15" pin="3"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="113" name="FEEDER6_RX">
+      <node ref="R20" pin="2"/>
+      <node ref="R7" pin="2"/>
+      <node ref="J4" pin="3"/>
+    </net>
+    <net code="114" name="Net-(Q7-Pad1)">
+      <node ref="Q7" pin="1"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="115" name="Net-(Q6-Pad1)">
+      <node ref="Q6" pin="1"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="116" name="FEEDER5_RX">
+      <node ref="J13" pin="3"/>
+      <node ref="R19" pin="2"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="117" name="FEEDER7_RX">
+      <node ref="R8" pin="2"/>
+      <node ref="R21" pin="2"/>
+      <node ref="J14" pin="3"/>
+    </net>
+    <net code="118" name="Net-(A1-Pad27)">
+      <node ref="A1" pin="27"/>
+      <node ref="R41" pin="1"/>
+    </net>
+    <net code="119" name="F6_TX">
+      <node ref="Q24" pin="1"/>
+      <node ref="A1" pin="8"/>
+    </net>
+    <net code="120" name="F4_TX">
+      <node ref="Q23" pin="1"/>
+      <node ref="A1" pin="7"/>
+    </net>
+    <net code="121" name="F2_TX">
+      <node ref="A1" pin="6"/>
+      <node ref="Q22" pin="1"/>
+    </net>
+    <net code="122" name="F0_TX">
+      <node ref="Q21" pin="1"/>
+      <node ref="A1" pin="5"/>
+    </net>
+    <net code="123" name="F8_TX">
+      <node ref="Q25" pin="1"/>
+      <node ref="A1" pin="9"/>
+    </net>
+    <net code="124" name="Net-(A1-Pad30)">
+      <node ref="A1" pin="30"/>
+    </net>
+    <net code="125" name="Net-(A1-Pad3)">
+      <node ref="A1" pin="3"/>
+    </net>
+    <net code="126" name="Net-(A1-Pad28)">
+      <node ref="A1" pin="28"/>
+    </net>
+    <net code="127" name="Net-(A1-Pad18)">
+      <node ref="A1" pin="18"/>
+    </net>
+    <net code="128" name="Net-(A1-Pad17)">
+      <node ref="A1" pin="17"/>
+    </net>
+    <net code="129" name="/MCU and RX/DEBUG">
+      <node ref="A1" pin="1"/>
+    </net>
+    <net code="130" name="/MCU and RX/RX">
+      <node ref="Q19" pin="3"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="Q10" pin="3"/>
+      <node ref="Q15" pin="3"/>
+      <node ref="Q11" pin="3"/>
+      <node ref="Q9" pin="3"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="Q16" pin="3"/>
+      <node ref="Q14" pin="3"/>
+      <node ref="A1" pin="2"/>
+      <node ref="Q18" pin="3"/>
+      <node ref="R41" pin="2"/>
+      <node ref="Q4" pin="3"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="Q5" pin="3"/>
+      <node ref="Q12" pin="3"/>
+      <node ref="Q6" pin="3"/>
+      <node ref="Q13" pin="3"/>
+      <node ref="Q8" pin="3"/>
+      <node ref="Q20" pin="3"/>
+      <node ref="Q17" pin="3"/>
+      <node ref="Q7" pin="3"/>
+    </net>
+  </nets>
+</export>
