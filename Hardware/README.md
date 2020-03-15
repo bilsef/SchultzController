@@ -9,7 +9,7 @@
 * Click NEXT.
 * Confirm the BOM, click NEXT.
 * Confirm the parts placement. If the placement doesn't show up, don't worry about it.  It has been verified.  Click SAVE TO CART and complete your purchase.
-* [Buy me a coffee](https://www.buymeacoffee.com/cbVmnqB)
+* [Buy me a coffee](https://www.buymeacoffee.com/cbVmnqB):coffee::smile:
 * After you receive your boards, solder on the Arduino Nano Every using the surface mount pads and castellated holes.  Add connectors of your choice.  The 4 pin layout was made for JST B4B-XH-A(LF)(SN) connectors, but any 2.5mm compatible connector should work.
 
 
