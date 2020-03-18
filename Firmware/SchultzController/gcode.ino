@@ -179,9 +179,13 @@ void processCommand() {
 
       uint8_t inBuf[24];
 			if(feeders[signedFeederNo].readEEPROM(inBuf)) {
-        uint32_t count = (inBuf[5] << 16) + (inBuf[3] << 8) + inBuf[2];
+        uint32_t counth = inBuf[5];
+        counth <<= 16;
+        uint32_t countm = inBuf[3];
+        countm <<= 8;
+        uint32_t count = counth + countm + inBuf[2];
         char countStr[22];
-        sprintf(countStr, "Feed count: %u", count);
+        sprintf(countStr, "Feed count: %lu", count);
   			sendAnswer(0,F(countStr));
       } else {
         sendAnswer(1,F(" no response from feeder"));
@@ -219,7 +223,9 @@ void processCommand() {
 
       uint8_t inBuf[24];
       if(feeders[signedFeederNo].readEEPROM(inBuf)) {
-        uint16_t count = ((inBuf[12] & 0x0f) << 8) + inBuf[8];
+        uint16_t count = inBuf[12] & 0x0f;
+        count <<= 8;
+        count += inBuf[8];
         char countStr[22];
         sprintf(countStr, "Error 42 count: %u", count);
         sendAnswer(0,F(countStr));
@@ -241,7 +247,9 @@ void processCommand() {
 
       uint8_t inBuf[24];
       if(feeders[signedFeederNo].readEEPROM(inBuf)) {
-        uint16_t count = ((inBuf[12] & 0xf0) << 4) + inBuf[9];
+        uint16_t count = inBuf[12] & 0xf0;
+        count <<= 4;
+        count += inBuf[9];
         char countStr[22];
         sprintf(countStr, "Error 43 count: %u", count);
         sendAnswer(0,F(countStr));
@@ -263,7 +271,9 @@ void processCommand() {
 
       uint8_t inBuf[24];
       if(feeders[signedFeederNo].readEEPROM(inBuf)) {
-        uint16_t count = ((inBuf[13] & 0x0f) << 8) + inBuf[10];
+        uint16_t count = inBuf[13] & 0x0f;
+        count <<= 8;
+        count += inBuf[10];
         char countStr[22];
         sprintf(countStr, "Error 44 count: %u", count);
         sendAnswer(0,F(countStr));
@@ -289,7 +299,9 @@ void processCommand() {
 
       uint8_t inBuf[24];
       if(feeders[signedFeederNo].readEEPROM(inBuf)) {
-        uint16_t count = ((inBuf[13] & 0xf0) << 4) + inBuf[11];
+        uint16_t count = inBuf[13] & 0xf0;
+        count <<= 4;
+        count += inBuf[11];
         char countStr[22];
         sprintf(countStr, "Reset count: %u", count);
         sendAnswer(0,F(countStr));

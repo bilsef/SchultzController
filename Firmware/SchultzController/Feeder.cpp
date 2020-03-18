@@ -579,7 +579,7 @@ String FeederClass::reportStatus() {
 			return "getFeederStatus: Feed motor did not advance";
 		break;
 		default:
-      uint8_t statusCode[34];
+      char statusCode[34];
       sprintf( statusCode, "Unrecognized status code %02X", this->feederStatus);
 			return statusCode;
 	}
