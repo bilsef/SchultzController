@@ -115,7 +115,7 @@ bool FeederClass::sendCommand(uint8_t command) {
   
   #ifdef DEBUG
     Serial.print(this->port);
-    Serial.print(F(" sending: "));
+    Serial.print(" sending: ");
       for (i = 0; i < cmdLen + 2; i++) {
         Serial.print(buf[i],HEX);
         Serial.print(' ');
@@ -153,7 +153,7 @@ bool FeederClass::sendCommand(uint8_t command, uint8_t *dataBuf) {
   
   #ifdef DEBUG
     Serial.print(this->port);
-    Serial.print(F(" sending: "));
+    Serial.print(" sending: ");
       for (i = 0; i < cmdLen + 2; i++) {
         Serial.print(buf[i],HEX);
         Serial.print(' ');
@@ -191,7 +191,7 @@ bool FeederClass::sendCommand(uint8_t command, uint8_t *dataBuf, uint8_t offset)
   
   #ifdef DEBUG
     Serial.print(this->port);
-    Serial.print(F(" sending: "));
+    Serial.print(" sending: ");
       for (i = 0; i < cmdLen + 2; i++) {
         Serial.print(buf[i],HEX);
         Serial.print(' ');
@@ -233,7 +233,7 @@ bool FeederClass::sendCommand(uint8_t command, uint8_t dataLen, uint8_t *data) {
   
   #ifdef DEBUG
     Serial.println(checksum,HEX);
-    Serial.print(F("sending: "));
+    Serial.print("sending: ");
       for (i = 0; i < msgLen + 2; i++) {
         Serial.print(buf[i],HEX);
         Serial.print(' ');
@@ -269,7 +269,7 @@ bool FeederClass::sendPrePick() {
 
 	if (!FeederClass::sendCommand(CMD_PRE_PICK, dataBuf)) {
 		#ifdef DEBUG
-			Serial.println(F("No ACK from feeder"));
+			Serial.println("No ACK from feeder");
 		#endif
 		return false;
 	}
@@ -291,7 +291,7 @@ bool FeederClass::sendAdvance(bool overrideError) {
 	}
 
 	#ifdef DEBUG
-		Serial.println(F("advance triggered"));
+		Serial.println("advance triggered");
 		Serial.println(this->reportStatus());
 	#endif
 	
@@ -304,7 +304,7 @@ bool FeederClass::sendAdvance(bool overrideError) {
 			return false;
 		 } else {
 			#ifdef DEBUG
-				Serial.println(F("overridden error temporarily"));
+				Serial.println("overridden error temporarily");
 			#endif
 			 
 		 }
@@ -319,7 +319,7 @@ bool FeederClass::sendAdvance(bool overrideError) {
   
   if (!FeederClass::sendCommand(CMD_ADVANCE)) {
     #ifdef DEBUG
-      Serial.println(F("No ACK from feeder"));
+      Serial.println("No ACK from feeder");
     #endif
     return false;
   }
@@ -330,7 +330,7 @@ bool FeederClass::setPitch(uint8_t pitch) {
   uint8_t dataBuf[22];
 
   #ifdef DEBUG
-    Serial.print(F("Set pitch to "));
+    Serial.print("Set pitch to ");
     Serial.println(pitch);
   #endif
 
@@ -339,7 +339,7 @@ bool FeederClass::setPitch(uint8_t pitch) {
   
   if (!FeederClass::sendCommand(CMD_SET_PITCH, 1 , dataBuf)) {
     #ifdef DEBUG
-      Serial.println(F("No ACK from feeder"));
+      Serial.println("No ACK from feeder");
     #endif
     return false;
   }
@@ -352,7 +352,7 @@ bool FeederClass::setPitch(uint8_t pitch) {
 
   if (!FeederClass::sendCommand(CMD_EEPROM_READ, dataBuf, 0)) {
     #ifdef DEBUG
-      Serial.println(F("No ACK from feeder"));
+      Serial.println("No ACK from feeder");
     #endif
     return false;
   }
@@ -385,7 +385,7 @@ bool FeederClass::setPitch(uint8_t pitch) {
   
   if (!FeederClass::sendCommand(CMD_EEPROM_WRITE, 17, dataBuf)) {
     #ifdef DEBUG
-      Serial.println(F("No ACK from feeder"));
+      Serial.println("No ACK from feeder");
     #endif
     return false;
   }
@@ -415,7 +415,7 @@ bool FeederClass::getFeederStatus() {
 
 	if (!FeederClass::sendCommand(CMD_STATUS, dataBuf)) {
 		#ifdef DEBUG
-			Serial.println(F("No ACK from feeder"));
+			Serial.println("No ACK from feeder");
 		#endif
 		return false;
 	}
@@ -435,7 +435,7 @@ bool FeederClass::readEEPROM(uint8_t *dataBuf) {
 
   if (!FeederClass::sendCommand(CMD_EEPROM_READ, dataBuf, 0)) {
     #ifdef DEBUG
-      Serial.println(F("No ACK from feeder"));
+      Serial.println("No ACK from feeder");
     #endif
     return false;
   }
@@ -463,7 +463,7 @@ bool FeederClass::readInfo(uint8_t *dataBuf) {
 
   if (!FeederClass::sendCommand(CMD_INFO, dataBuf)) {
     #ifdef DEBUG
-      Serial.println(F("No ACK from feeder"));
+      Serial.println("No ACK from feeder");
     #endif
     return false;
   }
@@ -481,7 +481,7 @@ bool FeederClass::clearFeedCount() {
 
   if (!FeederClass::sendCommand(CMD_EEPROM_READ, dataBuf, 0)) {
     #ifdef DEBUG
-      Serial.println(F("No ACK from feeder"));
+      Serial.println("No ACK from feeder");
     #endif
     return false;
   }
@@ -507,7 +507,7 @@ bool FeederClass::clearFeedCount() {
 
   if (!FeederClass::sendCommand(CMD_EEPROM_WRITE, 17, dataBuf)) {
     #ifdef DEBUG
-      Serial.println(F("No ACK from feeder"));
+      Serial.println("No ACK from feeder");
     #endif
     return false;
   }
@@ -543,7 +543,7 @@ bool FeederClass::setID(int32_t feederID) {
 
   if (!FeederClass::sendCommand(CMD_EEPROM_WRITE, 17, dataBuf)) {
     #ifdef DEBUG
-      Serial.println(F("No ACK from feeder"));
+      Serial.println("No ACK from feeder");
     #endif
     return false;
   }
@@ -597,7 +597,7 @@ bool FeederClass::startSelfTest() {
   
   if (!FeederClass::sendCommand(CMD_SELF_TEST, 1 , dataBuf)) {
     #ifdef DEBUG
-      Serial.println(F("No ACK from feeder"));
+      Serial.println("No ACK from feeder");
     #endif
     return false;
   }
@@ -615,7 +615,7 @@ bool FeederClass::stopSelfTest() {
   
   if (!FeederClass::sendCommand(CMD_SELF_TEST, 1 , dataBuf)) {
     #ifdef DEBUG
-      Serial.println(F("No ACK from feeder"));
+      Serial.println("No ACK from feeder");
     #endif
     return false;
   }

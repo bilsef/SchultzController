@@ -32,7 +32,7 @@ void setup() {
   
 	Serial.begin(SERIAL_BAUD);
 	while (!Serial);
-	Serial.println(F("Controller starting...")); Serial.flush();
+	Serial.println("Controller starting..."); Serial.flush();
 	
 	Serial1.begin(9600); // The hardware RX port
   
@@ -43,7 +43,7 @@ void setup() {
 	// setup listener to serial stream
 	setupGCodeProc();
 
-	Serial.println(F("Controller ready."));
+	Serial.println("Controller ready.");
 
 }
 

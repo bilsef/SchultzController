@@ -59,6 +59,7 @@
 /* -----------------------------------------------------------------
 *  M-CODES
 *  ----------------------------------------------------------------- */
+#define MCODE_DRIVER_INFO 115
 #define MCODE_PRE_PICK 600
 #define MCODE_ADVANCE 601
 #define MCODE_FEEDER_STATUS 602

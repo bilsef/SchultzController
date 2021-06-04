@@ -32,9 +32,9 @@ void setupGCodeProc() {
 
 void sendAnswer(uint8_t error, String message) {
 	if(error==0)
-	Serial.print(F("ok "));
+	Serial.print("ok ");
 	else
-	Serial.print(F("error "));
+	Serial.print("error ");
 
 	Serial.println(message);
 }
@@ -103,6 +103,13 @@ void processCommand() {
 
 	switch(cmd) {
 
+    // M115
+    case MCODE_DRIVER_INFO: {
+      sendAnswer(0,"Siemens Schultz Feeder Controller V2.0");
+
+      break;
+    }
+
 		/*
 		FEEDER-CODES
 		*/
@@ -113,15 +120,15 @@ void processCommand() {
 
 			//check for presence of a mandatory FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
-				sendAnswer(1,F("feederNo missing or invalid"));
+				sendAnswer(1,"feederNo missing or invalid");
 				break;
 			}
 
 			//send pre pick command
 			if (!feeders[signedFeederNo].sendPrePick()) {
-				sendAnswer(1,F("No acknowledge from feeder"));
+				sendAnswer(1,"No acknowledge from feeder");
 			} else {
-				sendAnswer(0,F("Shutter opened"));
+				sendAnswer(0,"Shutter opened");
 			}
      
       break;
@@ -140,15 +147,15 @@ void processCommand() {
 
 			//check for presence of a mandatory FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
-				sendAnswer(1,F("feederNo missing or invalid"));
+				sendAnswer(1,"feederNo missing or invalid");
 				break;
 			}
 
 			//send feed command
 			if (!feeders[signedFeederNo].sendAdvance(overrideError)) {
-				sendAnswer(1,F("Unable to advance tape"));
+				sendAnswer(1,"Unable to advance tape");
 			} else {
-				sendAnswer(0,F("Tape advanced"));
+				sendAnswer(0,"Tape advanced");
 			}
 			
 			break;
@@ -159,7 +166,7 @@ void processCommand() {
 
 			//check for presence of FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
-				sendAnswer(1,F("feederNo missing or invalid"));
+				sendAnswer(1,"feederNo missing or invalid");
 				break;
 			}
 
@@ -173,7 +180,7 @@ void processCommand() {
 
 			//check for presence of FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
-				sendAnswer(1,F("feederNo missing or invalid"));
+				sendAnswer(1,"feederNo missing or invalid");
 				break;
 			}
 
@@ -186,9 +193,9 @@ void processCommand() {
         uint32_t count = counth + countm + inBuf[2];
         char countStr[22];
         sprintf(countStr, "Feed count: %lu", count);
-  			sendAnswer(0,F(countStr));
+  			sendAnswer(0,countStr);
       } else {
-        sendAnswer(1,F(" no response from feeder"));
+        sendAnswer(1," no response from feeder");
       }
 
 			break;
@@ -199,14 +206,14 @@ void processCommand() {
 
 			//check for presence of FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
-				sendAnswer(1,F("feederNo missing or invalid"));
+				sendAnswer(1,"feederNo missing or invalid");
 				break;
 			}
 
 			if (!feeders[signedFeederNo].clearFeedCount()) {
-				sendAnswer(1,F("Unable to clear feed count"));
+				sendAnswer(1,"Unable to clear feed count");
 			} else {
-				sendAnswer(0,F("Feed count cleared"));
+				sendAnswer(0,"Feed count cleared");
 			}
 
 			break;
@@ -217,7 +224,7 @@ void processCommand() {
 
       //check for presence of FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
-        sendAnswer(1,F("feederNo missing or invalid"));
+        sendAnswer(1,"feederNo missing or invalid");
         break;
       }
 
@@ -228,9 +235,9 @@ void processCommand() {
         count += inBuf[8];
         char countStr[22];
         sprintf(countStr, "Error 42 count: %u", count);
-        sendAnswer(0,F(countStr));
+        sendAnswer(0,countStr);
       } else {
-        sendAnswer(1,F(" no response from feeder"));
+        sendAnswer(1," no response from feeder");
       }
 
       break;
@@ -241,7 +248,7 @@ void processCommand() {
 
       //check for presence of FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
-        sendAnswer(1,F("feederNo missing or invalid"));
+        sendAnswer(1,"feederNo missing or invalid");
         break;
       }
 
@@ -252,9 +259,9 @@ void processCommand() {
         count += inBuf[9];
         char countStr[22];
         sprintf(countStr, "Error 43 count: %u", count);
-        sendAnswer(0,F(countStr));
+        sendAnswer(0,countStr);
       } else {
-        sendAnswer(1,F(" no response from feeder"));
+        sendAnswer(1," no response from feeder");
       }
 
       break;
@@ -265,7 +272,7 @@ void processCommand() {
 
       //check for presence of FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
-        sendAnswer(1,F("feederNo missing or invalid"));
+        sendAnswer(1,"feederNo missing or invalid");
         break;
       }
 
@@ -276,9 +283,9 @@ void processCommand() {
         count += inBuf[10];
         char countStr[22];
         sprintf(countStr, "Error 44 count: %u", count);
-        sendAnswer(0,F(countStr));
+        sendAnswer(0,countStr);
       } else {
-        sendAnswer(1,F(" no response from feeder"));
+        sendAnswer(1," no response from feeder");
       }
 
       break;
@@ -289,7 +296,7 @@ void processCommand() {
 
       //check for presence of FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
-        sendAnswer(1,F("feederNo missing or invalid"));
+        sendAnswer(1,"feederNo missing or invalid");
         break;
       }
 
@@ -304,9 +311,9 @@ void processCommand() {
         count += inBuf[11];
         char countStr[22];
         sprintf(countStr, "Reset count: %u", count);
-        sendAnswer(0,F(countStr));
+        sendAnswer(0,countStr);
       } else {
-        sendAnswer(1,F(" no response from feeder"));
+        sendAnswer(1," no response from feeder");
       }
 
       break;
@@ -317,7 +324,7 @@ void processCommand() {
 
 			//check for presence of FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
-				sendAnswer(1,F("feederNo missing or invalid"));
+				sendAnswer(1,"feederNo missing or invalid");
 				break;
 			}
 
@@ -325,9 +332,9 @@ void processCommand() {
 			if(feeders[signedFeederNo].readEEPROM(inBuf)) {
         char hex[50];
         sprintf(hex, "%02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X ", inBuf[0], inBuf[1], inBuf[2], inBuf[3], inBuf[4], inBuf[5], inBuf[6], inBuf[7], inBuf[8], inBuf[9], inBuf[10], inBuf[11], inBuf[12], inBuf[13], inBuf[14], inBuf[15]);
-  			sendAnswer(0,F(hex));
+  			sendAnswer(0,hex);
 			} else {
-        sendAnswer(1,F(" no response from feeder"));
+        sendAnswer(1," no response from feeder");
 			}
 			break;
 		}
@@ -337,7 +344,7 @@ void processCommand() {
 
       //check for presence of FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
-        sendAnswer(1,F("feederNo missing or invalid"));
+        sendAnswer(1,"feederNo missing or invalid");
         break;
       }
 
@@ -352,9 +359,9 @@ void processCommand() {
         uint16_t id = (inBuf[1] << 8) + inBuf[0];
         char idStr[22];
         sprintf(idStr, "ID: %u%s", id, (left ? "L" : "R"));
-        sendAnswer(0,F(idStr));
+        sendAnswer(0,idStr);
       } else {
-        sendAnswer(1,F(" no response from feeder"));
+        sendAnswer(1," no response from feeder");
       }
 
       break;
@@ -366,7 +373,7 @@ void processCommand() {
 
       //check for presence of FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
-        sendAnswer(1,F("feederNo missing or invalid"));
+        sendAnswer(1,"feederNo missing or invalid");
         break;
       }
 
@@ -377,19 +384,19 @@ void processCommand() {
 
       //check for presence of FeederID
       if(!validFeederID(newFeederID,1)) {
-        sendAnswer(1,F("feederID missing or invalid"));
+        sendAnswer(1,"feederID missing or invalid");
         break;
       }
 
       
       if(feeders[signedFeederNo].setID(newFeederID)) {
         if(feeders[signedFeederNo+1].setID(0)) {  // need to clear 2nd lane also
-          sendAnswer(0,F("ID set"));
+          sendAnswer(0,"ID set");
         } else {
-          sendAnswer(1,F(" no response from feeder"));
+          sendAnswer(1," no response from feeder");
         }
       } else {
-        sendAnswer(1,F(" no response from feeder"));
+        sendAnswer(1," no response from feeder");
       }
 
       break;
@@ -400,7 +407,7 @@ void processCommand() {
 
 			//check for presence of FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
-				sendAnswer(1,F("feederNo missing or invalid"));
+				sendAnswer(1,"feederNo missing or invalid");
 				break;
 			}
 
@@ -408,9 +415,9 @@ void processCommand() {
 			if(feeders[signedFeederNo].readEEPROM(inBuf)) {
         char pitch[6];
         sprintf(pitch, "%d MM", (inBuf[4] == 0 ? 2 : 4));
-  			sendAnswer(0,F(pitch));
+  			sendAnswer(0,pitch);
 			} else {
-        sendAnswer(1,F(" no response from feeder"));
+        sendAnswer(1," no response from feeder");
 			}
 			break;
 		}
@@ -421,7 +428,7 @@ void processCommand() {
 
       //check for presence of FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
-        sendAnswer(1,F("feederNo missing or invalid"));
+        sendAnswer(1,"feederNo missing or invalid");
         break;
       }
 
@@ -434,13 +441,13 @@ void processCommand() {
         }
         //send set pitch command
         if (!feeders[signedFeederNo].setPitch(pitch)) {
-          sendAnswer(1,F("Unable to set pitch"));
+          sendAnswer(1,"Unable to set pitch");
         } else {
-          sendAnswer(0,F("Pitch set"));
+          sendAnswer(0,"Pitch set");
         }
 
       } else {
-        sendAnswer(1,F(" no response from feeder"));
+        sendAnswer(1," no response from feeder");
       }
       break;
     }
@@ -450,7 +457,7 @@ void processCommand() {
 
 			//check for presence of FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
-				sendAnswer(1,F("feederNo missing or invalid"));
+				sendAnswer(1,"feederNo missing or invalid");
 				break;
 			}
 
@@ -458,9 +465,9 @@ void processCommand() {
   			if (feeders[signedFeederNo].readInfo(inBuf)) {
         char version[25];
         sprintf(version, "Firmware version %d.%d", inBuf[2], inBuf[3]);
-  			sendAnswer(0,F(version));
+  			sendAnswer(0,version);
       } else {
-        sendAnswer(1,F(" no response from feeder"));
+        sendAnswer(1," no response from feeder");
       }
 
 			break;
@@ -472,15 +479,15 @@ void processCommand() {
 
       //check for presence of a mandatory FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
-        sendAnswer(1,F("feederNo missing or invalid"));
+        sendAnswer(1,"feederNo missing or invalid");
         break;
       }
 
       //send self test command
       if (!feeders[signedFeederNo].startSelfTest()) {
-        sendAnswer(1,F("No acknowledge from feeder"));
+        sendAnswer(1,"No acknowledge from feeder");
       } else {
-        sendAnswer(0,F("Self test started"));
+        sendAnswer(0,"Self test started");
       }
      
       break;
@@ -492,15 +499,15 @@ void processCommand() {
 
       //check for presence of a mandatory FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
-        sendAnswer(1,F("feederNo missing or invalid"));
+        sendAnswer(1,"feederNo missing or invalid");
         break;
       }
 
       //send self test command
       if (!feeders[signedFeederNo].stopSelfTest()) {
-        sendAnswer(1,F("No acknowledge from feeder"));
+        sendAnswer(1,"No acknowledge from feeder");
       } else {
-        sendAnswer(0,F("Self test stopped"));
+        sendAnswer(0,"Self test stopped");
       }
      
       break;
@@ -508,7 +515,7 @@ void processCommand() {
 
 
 		default:
-		sendAnswer(0,F("unknown or empty command ignored"));
+		sendAnswer(0,"unknown or empty command ignored");
 
 		break;
 
