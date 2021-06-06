@@ -105,7 +105,7 @@ void processCommand() {
 
     // M115
     case MCODE_DRIVER_INFO: {
-      sendAnswer(0,"Siemens Schultz Feeder Controller V2.0");
+      sendAnswer(0,"FIRMWARE_NAME: Schultz Feeder Controller, FIRMWARE_VERSION: 2.0");
 
       break;
     }
