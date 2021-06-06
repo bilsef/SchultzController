@@ -31,12 +31,22 @@ void setupGCodeProc() {
 }
 
 void sendAnswer(uint8_t error, String message) {
-	if(error==0)
-	Serial.print("ok ");
-	else
-	Serial.print("error ");
+  switch (error) {
+    case 0: {
+      Serial.print("ok ");
+      Serial.println(message);
+    }
 
-	Serial.println(message);
+    case 1: {
+      Serial.print("error ");
+      Serial.println(message);
+    }
+
+    case 2: {
+      Serial.println(message);
+      Serial.println("ok ");
+    }
+  }
 }
 
 bool validFeederNo(int8_t signedFeederNo, uint8_t feederNoMandatory = 0) {
@@ -105,7 +115,7 @@ void processCommand() {
 
     // M115
     case MCODE_DRIVER_INFO: {
-      sendAnswer(0,"FIRMWARE_NAME: Schultz Feeder Controller, FIRMWARE_VERSION: 2.0");
+      sendAnswer(2,"FIRMWARE_NAME: Schultz Feeder Controller, FIRMWARE_VERSION: 2.0");
 
       break;
     }
