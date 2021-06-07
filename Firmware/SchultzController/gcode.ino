@@ -554,9 +554,13 @@ void listenToSerialStream() {
 
 		// if the received character is a newline, processCommand
 		if (receivedChar == '\n') {
+      //#ifdef DEBUG
+      Serial.print("buffer ");
+      Serial.println(bufPtr);
+      //#endif
       int curBuf = bufPtr;
       // switch to next buffer while processing this one
-      if (+bufPtr > 3)
+      if (++bufPtr > 3)
         bufPtr = 0;
 
 			//remove comments
