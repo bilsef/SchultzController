@@ -1,7 +1,7 @@
 #include "config.h"
 
-String inputBuffer = "";         // Buffer for incoming G-Code lines
-
+String inputBuffer[] = {"", "", "", ""};         // Buffer for incoming G-Code lines
+int bufPtr = 0;
 
 /**
 * Look for character /code/ in the inputBuffer and read the float that immediately follows it.
@@ -9,15 +9,15 @@ String inputBuffer = "";         // Buffer for incoming G-Code lines
 * @input code the character to look for.
 * @input defaultVal the return value if /code/ is not found.
 **/
-float parseParameter(char code,float defaultVal) {
-	int codePosition = inputBuffer.indexOf(code);
+float parseParameter(String inBuf, char code, float defaultVal) {
+	int codePosition = inBuf.indexOf(code);
 	if(codePosition!=-1) {
 		//code found in buffer
 
 		//find end of number (separated by " " (space))
-		int delimiterPosition = inputBuffer.indexOf(" ",codePosition+1);
+		int delimiterPosition = inBuf.indexOf(" ",codePosition+1);
 
-		float parsedNumber = inputBuffer.substring(codePosition+1,delimiterPosition).toFloat();
+		float parsedNumber = inBuf.substring(codePosition+1,delimiterPosition).toFloat();
 
 		return parsedNumber;
 		} else {
@@ -27,7 +27,9 @@ float parseParameter(char code,float defaultVal) {
 }
 
 void setupGCodeProc() {
-	inputBuffer.reserve(MAX_BUFFFER_MCODE_LINE);
+  for (int i=0; i<4; i++) {
+	  inputBuffer[i].reserve(MAX_BUFFFER_MCODE_LINE);
+  }
 }
 
 void sendAnswer(uint8_t error, String message) {
@@ -103,10 +105,10 @@ bool validFeederID(int32_t signedFeederID, uint8_t feederIDMandatory = 0) {
 /**
 * Read the input buffer and find any recognized commands.  One G or M command per line.
 */
-void processCommand() {
+void processCommand(String cmdBuf) {
 
 	//get the command, default -1 if no command found
-	int cmd = parseParameter('M',-1);
+	int cmd = parseParameter(cmdBuf, 'M', -1);
 
 	#ifdef DEBUG
 	Serial.print("command found: M");
@@ -119,7 +121,6 @@ void processCommand() {
     // M115
     case MCODE_DRIVER_INFO: {
       sendAnswer(2,"FIRMWARE_NAME: Schultz Feeder Controller, FIRMWARE_VERSION: 2.0");
-
       break;
     }
 
@@ -129,7 +130,7 @@ void processCommand() {
 
 		case MCODE_PRE_PICK: {
 
-			int8_t signedFeederNo = (int)parseParameter('N',-1);
+			int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
 
 			//check for presence of a mandatory FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
@@ -148,8 +149,8 @@ void processCommand() {
 		}
 
 		case MCODE_ADVANCE: {
-			int8_t signedFeederNo = (int)parseParameter('N',-1);
-			int8_t overrideErrorRaw = (int)parseParameter('X',-1);
+			int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
+			int8_t overrideErrorRaw = (int)parseParameter(cmdBuf, 'X',-1);
 			bool overrideError = false;
 			if(overrideErrorRaw >= 1) {
 				overrideError = true;
@@ -175,7 +176,7 @@ void processCommand() {
 		}
 
 		case MCODE_FEEDER_STATUS: {
-			int8_t signedFeederNo = (int)parseParameter('N',-1);
+			int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
 
 			//check for presence of FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
@@ -189,7 +190,7 @@ void processCommand() {
 		}
 
 		case MCODE_GET_FEED_COUNT: {
-			int8_t signedFeederNo = (int)parseParameter('N',-1);
+			int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
 
 			//check for presence of FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
@@ -215,7 +216,7 @@ void processCommand() {
 		}
 
 		case MCODE_CLEAR_FEED_COUNT: {
-			int8_t signedFeederNo = (int)parseParameter('N',-1);
+			int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
 
 			//check for presence of FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
@@ -233,7 +234,7 @@ void processCommand() {
 		}
 
     case MCODE_GET_ERR42_COUNT: {
-      int8_t signedFeederNo = (int)parseParameter('N',-1);
+      int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
 
       //check for presence of FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
@@ -257,7 +258,7 @@ void processCommand() {
     }
 
     case MCODE_GET_ERR43_COUNT: {
-      int8_t signedFeederNo = (int)parseParameter('N',-1);
+      int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
 
       //check for presence of FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
@@ -281,7 +282,7 @@ void processCommand() {
     }
 
     case MCODE_GET_ERR44_COUNT: {
-      int8_t signedFeederNo = (int)parseParameter('N',-1);
+      int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
 
       //check for presence of FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
@@ -305,7 +306,7 @@ void processCommand() {
     }
 
     case MCODE_GET_RESET_COUNT: {
-      int8_t signedFeederNo = (int)parseParameter('N',-1);
+      int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
 
       //check for presence of FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
@@ -333,7 +334,7 @@ void processCommand() {
     }
 
 		case MCODE_READ_EEPROM: {
-			int8_t signedFeederNo = (int)parseParameter('N',-1);
+			int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
 
 			//check for presence of FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
@@ -353,7 +354,7 @@ void processCommand() {
 		}
 
     case MCODE_GET_FEEDER_ID: {
-      int8_t signedFeederNo = (int)parseParameter('N',-1);
+      int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
 
       //check for presence of FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
@@ -381,8 +382,8 @@ void processCommand() {
     }
 
     case MCODE_SET_FEEDER_ID: {
-      int8_t signedFeederNo = (int)parseParameter('N',-1);
-      int32_t newFeederID = (int)parseParameter('X',-1);
+      int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
+      int32_t newFeederID = (int)parseParameter(cmdBuf, 'X',-1);
 
       //check for presence of FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
@@ -416,7 +417,7 @@ void processCommand() {
     }
 
 		case MCODE_GET_PITCH: {
-			int8_t signedFeederNo = (int)parseParameter('N',-1);
+			int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
 
 			//check for presence of FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
@@ -436,7 +437,7 @@ void processCommand() {
 		}
 
     case MCODE_TOGGLE_PITCH: {
-      int8_t signedFeederNo = (int)parseParameter('N',-1);
+      int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
       int8_t pitch;
 
       //check for presence of FeederNo
@@ -466,7 +467,7 @@ void processCommand() {
     }
 
 		case MCODE_GET_FIRMWARE_INFO: {
-			int8_t signedFeederNo = (int)parseParameter('N',-1);
+			int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
 
 			//check for presence of FeederNo
 			if(!validFeederNo(signedFeederNo,1)) {
@@ -488,7 +489,7 @@ void processCommand() {
 
     case MCODE_START_SELF_TEST: {
 
-      int8_t signedFeederNo = (int)parseParameter('N',-1);
+      int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
 
       //check for presence of a mandatory FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
@@ -508,7 +509,7 @@ void processCommand() {
 
     case MCODE_STOP_SELF_TEST: {
 
-      int8_t signedFeederNo = (int)parseParameter('N',-1);
+      int8_t signedFeederNo = (int)parseParameter(cmdBuf, 'N',-1);
 
       //check for presence of a mandatory FeederNo
       if(!validFeederNo(signedFeederNo,1)) {
@@ -549,20 +550,24 @@ void listenToSerialStream() {
 		//#endif
 
 		// add to buffer
-		inputBuffer += receivedChar;
+		inputBuffer[bufPtr] += receivedChar;
 
 		// if the received character is a newline, processCommand
 		if (receivedChar == '\n') {
+      int curBuf = bufPtr;
+      // switch to next buffer while processing this one
+      if (+bufPtr > 3)
+        bufPtr = 0;
 
 			//remove comments
-			inputBuffer.remove(inputBuffer.indexOf(";"));
-			inputBuffer.trim();
+			inputBuffer[curBuf].remove(inputBuffer[curBuf].indexOf(";"));
+			inputBuffer[curBuf].trim();
 
 
-			processCommand();
+			processCommand(inputBuffer[curBuf]);
 
 			//clear buffer
-			inputBuffer="";
+			inputBuffer[curBuf]="";
 
 		}
 	}
