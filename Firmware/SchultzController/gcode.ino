@@ -35,16 +35,19 @@ void sendAnswer(uint8_t error, String message) {
     case 0: {
       Serial.print("ok ");
       Serial.println(message);
+      break;
     }
 
     case 1: {
       Serial.print("error ");
       Serial.println(message);
+      break;
     }
 
     case 2: {
       Serial.println(message);
       Serial.println("ok ");
+      break;
     }
   }
 }
