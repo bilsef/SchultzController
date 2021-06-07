@@ -546,7 +546,7 @@ void listenToSerialStream() {
 
 		// print back for debugging
 		//#ifdef DEBUG
-		Serial.print(receivedChar);
+		  Serial.print(receivedChar);
 		//#endif
 
 		// add to buffer
@@ -554,10 +554,10 @@ void listenToSerialStream() {
 
 		// if the received character is a newline, processCommand
 		if (receivedChar == '\n') {
-      //#ifdef DEBUG
-      Serial.print("buffer ");
-      Serial.println(bufPtr);
-      //#endif
+      #ifdef DEBUG
+        Serial.print("buffer ");
+        Serial.println(bufPtr);
+      #endif
       int curBuf = bufPtr;
       // switch to next buffer while processing this one
       if (++bufPtr > 3)
