@@ -38,21 +38,12 @@ void sendAnswer(uint8_t error, String message) {
       Serial.print("ok ");
       Serial.println(message);
     }
-<<<<<<< HEAD
 
     case 1: {
       Serial.print("error ");
       Serial.println(message);
     }
 
-=======
-
-    case 1: {
-      Serial.print("error ");
-      Serial.println(message);
-    }
-
->>>>>>> 4ee78b8d6f8ec7624be237ec556e789184304ce8
     case 2: {
       Serial.println(message);
       Serial.println("ok ");
@@ -126,12 +117,7 @@ void processCommand(String cmdBuf) {
 
     // M115
     case MCODE_DRIVER_INFO: {
-<<<<<<< HEAD
-      sendAnswer(0,"FIRMWARE_NAME:SchultzController V2.0 MACHINE_TYPE:Siemens Schultz Feeder Controller");
-=======
       sendAnswer(2,"FIRMWARE_NAME: Schultz Feeder Controller, FIRMWARE_VERSION: 2.0");
->>>>>>> 4ee78b8d6f8ec7624be237ec556e789184304ce8
-
       break;
     }
 
